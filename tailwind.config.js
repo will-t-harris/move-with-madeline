@@ -1,7 +1,14 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#5A89AC",
+      },
+    },
+    fontFamily: {
+      subheader: ["Bubbler One"],
+    },
   },
   variants: {},
   plugins: [],
