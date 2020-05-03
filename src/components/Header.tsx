@@ -6,7 +6,11 @@ import Img from "gatsby-image"
 
 import SubHeader from "./SubHeader"
 
-const Header = ({ siteTitle }) => {
+interface Props {
+  siteTitle: string
+}
+
+const Header = ({ siteTitle = "" }: Props) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
@@ -23,22 +27,12 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
-      <div className="mx-auto ">
-        <div className="flex justify-center ">
-          <Img fixed={data.file.childImageSharp.fixed} />
-        </div>
-        <SubHeader />
+      <div className="flex justify-center ">
+        <Img fixed={data.file.childImageSharp.fixed} />
       </div>
+      <SubHeader twClasses="" />
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

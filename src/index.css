@@ -6099,6 +6099,10 @@ video {
   font-family: Bubbler One;
 }
 
+.font-content {
+  font-family: Varela ;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -24629,6 +24633,10 @@ video {
 
   .sm\:font-subheader {
     font-family: Bubbler One;
+  }
+
+  .sm\:font-content {
+    font-family: Varela ;
   }
 
   .sm\:font-hairline {
@@ -43164,6 +43172,10 @@ video {
     font-family: Bubbler One;
   }
 
+  .md\:font-content {
+    font-family: Varela ;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -61697,6 +61709,10 @@ video {
     font-family: Bubbler One;
   }
 
+  .lg\:font-content {
+    font-family: Varela ;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -80228,6 +80244,10 @@ video {
 
   .xl\:font-subheader {
     font-family: Bubbler One;
+  }
+
+  .xl\:font-content {
+    font-family: Varela ;
   }
 
   .xl\:font-hairline {

@@ -1,6 +1,10 @@
 import React from "react"
 
-const SubHeader = () => {
+interface Props {
+  twClasses?: string
+}
+
+const SubHeader = ({ twClasses }: Props) => {
   return (
     <div className="flex justify-center">
       <ul className="flex flex-row font-subheader">
