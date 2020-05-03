@@ -12,6 +12,15 @@ module.exports = {
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ["Bubbler One", "Varela"],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
