@@ -30,7 +30,7 @@ const Header = ({ siteTitle = "" }: Props) => {
       <div className="flex justify-center ">
         <Img fixed={data.file.childImageSharp.fixed} />
       </div>
-      <SubHeader twClasses="" />
+      <SubHeader />
     </header>
   )
 }
