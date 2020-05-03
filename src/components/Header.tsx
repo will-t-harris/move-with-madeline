@@ -23,8 +23,6 @@ const Header = ({ siteTitle = "" }: Props) => {
     }
   `)
 
-  console.log(data)
-
   return (
     <header>
       <div className="flex justify-center ">
