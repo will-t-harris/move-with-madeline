@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ["Bubbler One"],
+          families: ["Bubbler One", "Varela"],
         },
       },
     },

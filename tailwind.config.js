@@ -8,6 +8,7 @@ module.exports = {
     },
     fontFamily: {
       subheader: ["Bubbler One"],
+      content: ["Varela "],
     },
   },
   variants: {},
