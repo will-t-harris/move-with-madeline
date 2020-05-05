@@ -12,7 +12,7 @@ interface Props {
 
 const Header = ({ siteTitle = "" }: Props) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query HeaderQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
         childImageSharp {
           fixed {
@@ -23,11 +23,9 @@ const Header = ({ siteTitle = "" }: Props) => {
     }
   `)
 
-  console.log(data)
-
   return (
     <header>
-      <div className="flex justify-center ">
+      <div className="flex justify-center py-10">
         <Img fixed={data.file.childImageSharp.fixed} />
       </div>
       <SubHeader />
