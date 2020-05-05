@@ -1,6 +1,11 @@
 import React from "react"
 
-const ContentBlock = () => {
+interface Props {
+  value: string
+  onChange: () => {}
+}
+
+const ContentBlock = ({ value, onChange }: Props) => {
   return <div>Test</div>
 }
 

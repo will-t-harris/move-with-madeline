@@ -3,4 +3,4 @@ import CMS from "netlify-cms-app"
 
 import ContentBlock from "../components/ContentBlock"
 
-CMS.registerEditorComponent(ContentBlock)
+CMS.registerEditorComponent("Content Block", ContentBlock)
