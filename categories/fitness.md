@@ -1,4 +1,0 @@
----
-title: Fitness
-slug: /fitness
----
