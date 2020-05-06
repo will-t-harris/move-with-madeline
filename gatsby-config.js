@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     { resolve: `gatsby-plugin-mdx`, options: { extensions: [".mdx", `.md`] } },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
@@ -46,6 +47,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `index-pages`,
+        path: `blog/index-pages`,
       },
     },
   ],
