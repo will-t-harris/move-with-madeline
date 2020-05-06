@@ -1,21 +1,51 @@
 backend:
-  name: git-gateway
+  name: github
   repo: will-t-harris/move-with-madeline
-  branch: master
+  branch: develop
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - label: Categories
+    name: categories
+    folder: blog/categories
+    description: Use this collection to add or remove project categories
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          hint: Enter the category name,
+        }
+      - {
+          label: Slug,
+          name: slug,
+          widget: string,
+          hint: Enter the desired category page slug (e.g. public-works),
+        }
+
+  # - label: Home Page
+  #   name: home
+
+  - label: Fitness
+    name: fitness
+    folder: src/pages
+    create: true
+    fields:
+      - { label: Fitness Post Title, name: title, widget: string }
+      # TODO GENERATE SLUGS IN NODE?
+      - { label: Fitness Post Top Content, name: top-content, widget: markdown }
+      - {
+          label: Fitness Post Image,
+          name: mid-image,
+          widget: image,
+          allow_multiple: false,
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          hint: This is the body of the fitness page. This editor supports both rich-text and markdown entries,
+        }

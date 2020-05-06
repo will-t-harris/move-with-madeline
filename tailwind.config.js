@@ -4,6 +4,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#5A89AC",
+        bgPrimary: "#FFFCED",
+      },
+      spacing: {
+        "552": "34.5rem",
       },
     },
     fontFamily: {
