@@ -25,9 +25,16 @@ collections:
           widget: string,
           hint: Enter the desired category page slug (e.g. public-works),
         }
-
-  # - label: Home Page
-  #   name: home
+  - label: Pages
+    name: pages
+    files:
+      - file: "blog/pages/index.md"
+        label: Landing Page
+        name: index
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - { label: Intro Image, name: intro-image, widget: image }
 
   - label: Fitness
     name: fitness
