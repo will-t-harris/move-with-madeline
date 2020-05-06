@@ -7,34 +7,41 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: Categories
-    name: categories
-    folder: blog/categories
-    description: Use this collection to add or remove project categories
-    create: true
-    fields:
-      - {
-          label: Title,
-          name: title,
-          widget: string,
-          hint: Enter the category name,
-        }
-      - {
-          label: Slug,
-          name: slug,
-          widget: string,
-          hint: Enter the desired category page slug (e.g. public-works),
-        }
-  - label: Pages
-    name: pages
+  - label: Index Pages
+    name: index-pages
     files:
       - file: "blog/index-pages/index.md"
         label: Landing Page
         name: index
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+          - { label: Intro Title, name: intro-title, widget: string }
+          - { label: Intro Content, name: intro-content, widget: markdown }
           - { label: Intro Image, name: intro-image, widget: image }
+      - file: blog/index-pages/fitness.md
+        label: Fitness Page
+        name: fitness-index
+        fields:
+          - { label: Fitness Title, name: fitness-title, widget: string }
+      - file: "blog/index-pages/travel.md"
+        label: Travel Page
+        name: travel-index
+        fields:
+          - { label: Travel Title, name: travel-title, widget: string }
+      - file: "blog/index-pages/food.md"
+        label: Food Page
+        name: food-index
+        fields:
+          - { label: Food Title, name: food-title, widget: string }
+      - file: "blog/index-pages/lifestyle.md"
+        label: Lifestyle Page
+        name: lifestyle-index
+        fields:
+          - { label: Lifestyle Title, name: lifestyle-title, widget: string }
+      - file: "blog/index-pages/pcos.md"
+        label: PCOS Page
+        name: pcos-index
+        fields:
+          - { label: PCOS Title, name: pcos-title, widget: string }
 
   - label: Fitness
     name: fitness
