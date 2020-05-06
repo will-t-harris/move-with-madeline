@@ -46,6 +46,7 @@ collections:
   - name: fitness
     label: Fitness Pages
     label_singular: Fitness Page
+    identifier_field: fitnessPostTitle
     folder: blog/fitness
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
