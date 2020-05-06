@@ -21,7 +21,7 @@ const IntroSection = () => {
       }
     }
   `)
-  console.log(data)
+
   return (
     <div>
       <div className="flex flex-col">
