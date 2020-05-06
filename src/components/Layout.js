@@ -6,7 +6,7 @@ import "../../src/index.css"
 
 import Header from "./Header"
 
-const Layout = children => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
