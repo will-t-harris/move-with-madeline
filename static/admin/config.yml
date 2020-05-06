@@ -28,7 +28,7 @@ collections:
   - label: Pages
     name: pages
     files:
-      - folder: "blog/pages/index.md"
+      - file: "blog/index-pages/index.md"
         label: Landing Page
         name: index
         fields:
