@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
@@ -30,16 +29,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/Layout.tsx`),
+        component: require.resolve(`./src/components/Layout`),
       },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        content: [
-          path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
-        ],
       },
     },
     /**
