@@ -6,11 +6,7 @@ import Img from "gatsby-image"
 
 import SubHeader from "./SubHeader"
 
-interface Props {
-  siteTitle: string
-}
-
-const Header = ({ siteTitle = "" }: Props) => {
+const Header = siteTitle => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
@@ -34,3 +30,11 @@ const Header = ({ siteTitle = "" }: Props) => {
 }
 
 export default Header
+
+Header.defaultProps = {
+  siteTitle: "",
+}
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}

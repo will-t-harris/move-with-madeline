@@ -1,16 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "../../src/index.css"
 
 import Header from "./Header"
 
-interface Props {
-  children?: any
-  title: string
-}
-
-const Layout = ({ children }: Props) => {
+const Layout = children => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,3 +27,7 @@ const Layout = ({ children }: Props) => {
 }
 
 export default Layout
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+}
