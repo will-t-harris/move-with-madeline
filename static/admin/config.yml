@@ -52,7 +52,11 @@ collections:
     create: true
     fields:
       - { label: Fitness Post Title, name: fitnessPostTitle, widget: string }
-      - { label: Fitness Post Published Date, name: fitnessPostDate }
+      - {
+          label: Fitness Post Published Date,
+          name: fitnessPostDate,
+          widget: datetime,
+        }
       # TODO GENERATE SLUGS IN NODE?
       - {
           label: Fitness Post Top Content,
