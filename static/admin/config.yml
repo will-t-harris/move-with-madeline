@@ -43,22 +43,29 @@ collections:
         fields:
           - { label: PCOS Title, name: pcos-title, widget: string }
 
-  - label: Fitness
+  - label: Fitness Pages
     name: fitness
-    folder: src/pages
+    folder: blog/fitness
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
     create: true
     fields:
-      - { label: Fitness Post Title, name: title, widget: string }
+      - { label: Fitness Post Title, name: fitnessPostTitle, widget: string }
+      - { label: Fitness Post Published Date, name: fitnessPostDate }
       # TODO GENERATE SLUGS IN NODE?
-      - { label: Fitness Post Top Content, name: top-content, widget: markdown }
+      - {
+          label: Fitness Post Top Content,
+          name: fitnessPostTopContent,
+          widget: markdown,
+        }
       - {
           label: Fitness Post Image,
-          name: mid-image,
+          name: fitnessPostImage,
           widget: image,
           allow_multiple: false,
         }
       - {
-          label: Body,
+          label: Fitness Post Content,
           name: body,
           widget: markdown,
           hint: This is the body of the fitness page. This editor supports both rich-text and markdown entries,
