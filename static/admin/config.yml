@@ -7,44 +7,71 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: Categories
-    name: categories
-    folder: blog/categories
-    description: Use this collection to add or remove project categories
+  - name: index-pages
+    label: Index Pages
+    files:
+      - file: "blog/index-pages/index.md"
+        name: index
+        label: Landing Page
+        fields:
+          - { label: Intro Title, name: intro-title, widget: string }
+          - { label: Intro Content, name: intro-content, widget: markdown }
+          - { label: Intro Image, name: intro-image, widget: image }
+      - file: blog/index-pages/fitness.md
+        name: fitness-index
+        label: Fitness Page
+        fields:
+          - { label: Fitness Title, name: fitness-title, widget: string }
+      - file: "blog/index-pages/travel.md"
+        name: travel-index
+        label: Travel Page
+        fields:
+          - { label: Travel Title, name: travel-title, widget: string }
+      - file: "blog/index-pages/food.md"
+        name: food-index
+        label: Food Page
+        fields:
+          - { label: Food Title, name: food-title, widget: string }
+      - file: "blog/index-pages/lifestyle.md"
+        name: lifestyle-index
+        label: Lifestyle Page
+        fields:
+          - { label: Lifestyle Title, name: lifestyle-title, widget: string }
+      - file: "blog/index-pages/pcos.md"
+        name: pcos-index
+        label: PCOS Page
+        fields:
+          - { label: PCOS Title, name: pcos-title, widget: string }
+
+  - name: fitness
+    label: Fitness Pages
+    label_singular: Fitness Page
+    identifier_field: fitnessPostTitle
+    folder: blog/fitness
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
     create: true
     fields:
+      - { label: Fitness Post Title, name: fitnessPostTitle, widget: string }
       - {
-          label: Title,
-          name: title,
-          widget: string,
-          hint: Enter the category name,
+          label: Fitness Post Published Date,
+          name: fitnessPostDate,
+          widget: datetime,
         }
-      - {
-          label: Slug,
-          name: slug,
-          widget: string,
-          hint: Enter the desired category page slug (e.g. public-works),
-        }
-
-  # - label: Home Page
-  #   name: home
-
-  - label: Fitness
-    name: fitness
-    folder: src/pages
-    create: true
-    fields:
-      - { label: Fitness Post Title, name: title, widget: string }
       # TODO GENERATE SLUGS IN NODE?
-      - { label: Fitness Post Top Content, name: top-content, widget: markdown }
+      - {
+          label: Fitness Post Top Content,
+          name: fitnessPostTopContent,
+          widget: markdown,
+        }
       - {
           label: Fitness Post Image,
-          name: mid-image,
+          name: fitnessPostImage,
           widget: image,
           allow_multiple: false,
         }
       - {
-          label: Body,
+          label: Fitness Post Content,
           name: body,
           widget: markdown,
           hint: This is the body of the fitness page. This editor supports both rich-text and markdown entries,

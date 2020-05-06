@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import SEO from "../components/SEO"
+import IntroSection from "../components/IntroSection"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -21,7 +22,9 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <Img fluid={data.file.childImageSharp.fluid} className="h-552" />
-      <div className="h-552 bg-bgPrimary">Test</div>
+      <div className="h-552 bg-bgPrimary">
+        <IntroSection />
+      </div>
       <div style={{ height: "150px", overflow: "hidden" }}>
         <svg
           viewBox="0 0 500 150"
