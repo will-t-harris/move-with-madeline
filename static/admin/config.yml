@@ -7,44 +7,45 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: Index Pages
-    name: index-pages
+  - name: index-pages
+    label: Index Pages
     files:
       - file: "blog/index-pages/index.md"
-        label: Landing Page
         name: index
+        label: Landing Page
         fields:
           - { label: Intro Title, name: intro-title, widget: string }
           - { label: Intro Content, name: intro-content, widget: markdown }
           - { label: Intro Image, name: intro-image, widget: image }
       - file: blog/index-pages/fitness.md
-        label: Fitness Page
         name: fitness-index
+        label: Fitness Page
         fields:
           - { label: Fitness Title, name: fitness-title, widget: string }
       - file: "blog/index-pages/travel.md"
-        label: Travel Page
         name: travel-index
+        label: Travel Page
         fields:
           - { label: Travel Title, name: travel-title, widget: string }
       - file: "blog/index-pages/food.md"
-        label: Food Page
         name: food-index
+        label: Food Page
         fields:
           - { label: Food Title, name: food-title, widget: string }
       - file: "blog/index-pages/lifestyle.md"
-        label: Lifestyle Page
         name: lifestyle-index
+        label: Lifestyle Page
         fields:
           - { label: Lifestyle Title, name: lifestyle-title, widget: string }
       - file: "blog/index-pages/pcos.md"
-        label: PCOS Page
         name: pcos-index
+        label: PCOS Page
         fields:
           - { label: PCOS Title, name: pcos-title, widget: string }
 
-  - label: Fitness Pages
-    name: fitness
+  - name: fitness
+    label: Fitness Pages
+    label_singular: Fitness Page
     folder: blog/fitness
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
