@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-mdx`,
+    { resolve: `gatsby-plugin-mdx`, options: { extensions: [".mdx", `.md`] } },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/Layout`),
+        component: require.resolve(`./src/components/Layout.js`),
       },
     },
     {
