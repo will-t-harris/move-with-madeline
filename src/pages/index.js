@@ -1,9 +1,10 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import SEO from "../components/SEO"
 import IntroSection from "../components/IntroSection"
+import InstagramBanner from "../components/InstagramBanner"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -37,6 +38,7 @@ const IndexPage = () => {
           />
         </svg>
       </div>
+      <InstagramBanner />
     </>
   )
 }
