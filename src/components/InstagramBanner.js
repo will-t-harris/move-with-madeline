@@ -24,7 +24,9 @@ const InstagramBanner = () => {
   return (
     <div className="flex flex-col banner-background my-16">
       <div className="mx-auto mt-6 bg-red-400 text-white font-content shadow-lg">
-        <p className="p-2">FOLLOW ME @move.with.madeline!</p>
+        <a href="https://www.instagram.com/move.with.madeline/" className="p-2">
+          FOLLOW ME @move.with.madeline!
+        </a>
       </div>
       {data &&
         data.allInstaNode.nodes.map((node) => (
