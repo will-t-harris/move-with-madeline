@@ -43,6 +43,12 @@ module.exports = {
      * Source plugins
      */
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `move.with.madeline`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
