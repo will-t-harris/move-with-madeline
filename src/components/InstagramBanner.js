@@ -12,7 +12,7 @@ const InstagramBanner = () => {
           id
           localFile {
             childImageSharp {
-              fixed(width: 150, height: 150) {
+              fixed(width: 200, height: 200) {
                 ...GatsbyImageSharpFixed_withWebp
               }
             }
@@ -22,10 +22,19 @@ const InstagramBanner = () => {
     }
   `)
   return (
-    <div>
+    <div className="flex flex-col banner-background my-16">
+      <div className="mx-auto mt-6 bg-red-400 text-white font-content shadow-lg">
+        <a href="https://www.instagram.com/move.with.madeline/" className="p-2">
+          FOLLOW ME @move.with.madeline!
+        </a>
+      </div>
       {data &&
         data.allInstaNode.nodes.map((node) => (
-          <a key={node.id} href={`https://www.instagram.com/p/${node.id}`}>
+          <a
+            key={node.id}
+            href={`https://www.instagram.com/p/${node.id}`}
+            className="mx-auto my-6"
+          >
             <InstagramPostCard
               key={node.id}
               cardImgSrc={node.localFile.childImageSharp.fixed}
