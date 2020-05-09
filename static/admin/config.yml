@@ -13,7 +13,6 @@ collections:
       - file: "blog/index-pages/index.md"
         name: index
         label: Landing Page
-        create: false
         fields:
           - { label: Intro Title, name: introTitle, widget: string }
           - { label: Intro Content, name: introContent, widget: markdown }
@@ -21,7 +20,6 @@ collections:
       - file: blog/index-pages/fitness.md
         name: fitness-index
         label: Fitness Page
-        create: false
         fields:
           - { label: Fitness Title, name: fitnessTitle, widget: string }
           - { label: Fitness Image, name: fitnessImage, widget: image }
