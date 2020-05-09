@@ -20,7 +20,7 @@ const IntroSection = () => {
       }
       imageSharp(fluid: { originalName: { eq: "madeline-01.jpg" } }) {
         fluid(quality: 100, maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
