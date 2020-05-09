@@ -8,7 +8,7 @@ const SubHeader = ({ isOpen }) => {
       <div className="hidden md:flex md:justify-center">
         <ul className="flex flex-row font-subheader">
           <li className="mx-6 text-2xl">
-            <Link to="#">Fitness</Link>
+            <Link to="/fitness">Fitness</Link>
           </li>
           <li className="mx-6 text-2xl">
             <Link to="#">Travel</Link>
