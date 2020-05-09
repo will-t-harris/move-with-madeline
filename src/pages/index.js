@@ -8,7 +8,7 @@ import InstagramBanner from "../components/InstagramBanner"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query HomeQuery {
+    query homeQuery {
       file(relativePath: { eq: "madeline-home-placeholder.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
