@@ -9,7 +9,6 @@ const IntroSection = () => {
         frontmatter {
           title
           intro
-          image
         }
       }
       imageSharp(fluid: { originalName: { eq: "madeline-01.jpg" } }) {
