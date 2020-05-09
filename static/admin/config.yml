@@ -7,23 +7,34 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: "Home Page"
-    name: "index"
+  - label: Home Page
+    name: index
     files:
-      - label: "Home Page"
-        name: "about"
-        file: "blog/index-pages/index.md"
+      - label: Home Page
+        name: about
+        file: blog/index-pages/index.md
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
           - { label: Image, name: image, widget: image }
 
-  - label: "Fitness Page"
-    name: "fitness-index"
+  - label: Fitness Home Page
+    name: fitness-index
     files:
-      - label: "Fitness Page"
-        name: "fitness"
-        file: "blog/index-pages/fitness.md"
+      - label: Fitness Home Page
+        name: fitness
+        file: blog/index-pages/fitness.md
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
+
+  - label: Fitness Posts
+    label_singular: Fitness Post
+    name: fitness-posts
+    folder: blog/fitness
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Body, name: body, widget: markdown }
