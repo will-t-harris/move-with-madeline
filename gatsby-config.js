@@ -59,7 +59,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `index-pages`,
-        path: `blog/index-pages`,
+        path: `${__dirname}/blog/index-pages`,
       },
     },
   ],
