@@ -5,17 +5,11 @@ import Img from "gatsby-image"
 const IntroSection = () => {
   const data = useStaticQuery(graphql`
     query indexPageQuery {
-      file(
-        sourceInstanceName: { eq: "index-pages" }
-        relativePath: { regex: "/index/" }
-      ) {
-        id
-        absolutePath
-        childMdx {
-          frontmatter {
-            introTitle
-            introContent
-          }
+      markdownRemark(id: { eq: "ea78fdb9-afaa-5282-b440-d2a41485b4d7" }) {
+        frontmatter {
+          title
+          intro
+          image
         }
       }
       imageSharp(fluid: { originalName: { eq: "madeline-01.jpg" } }) {
@@ -30,10 +24,10 @@ const IntroSection = () => {
     <div>
       <div className="flex flex-col">
         <h1 className="text-5xl text-center font-subheader font-medium leading-tight p-16">
-          {data.file.childMdx.frontmatter.introTitle}
+          {data.markdownRemark.frontmatter.title}
         </h1>
         <p className="font-content mx-4 leading-relaxed opacity-75 pb-16 px-4">
-          {data.file.childMdx.frontmatter.introContent}
+          {data.markdownRemark.frontmatter.intro}
         </p>
       </div>
       <div>
