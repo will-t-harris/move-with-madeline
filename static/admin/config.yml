@@ -14,34 +14,35 @@ collections:
         name: index
         label: Landing Page
         fields:
-          - { label: Intro Title, name: intro-title, widget: string }
-          - { label: Intro Content, name: intro-content, widget: markdown }
-          - { label: Intro Image, name: intro-image, widget: image }
+          - { label: Intro Title, name: introTitle, widget: string }
+          - { label: Intro Content, name: introContent, widget: markdown }
+          - { label: Intro Image, name: introImage, widget: image }
       - file: blog/index-pages/fitness.md
         name: fitness-index
         label: Fitness Page
         fields:
-          - { label: Fitness Title, name: fitness-title, widget: string }
+          - { label: Fitness Title, name: fitnessTitle, widget: string }
+          - { label: Fitness Image, name: fitnessImage, widget: image }
       - file: "blog/index-pages/travel.md"
         name: travel-index
         label: Travel Page
         fields:
-          - { label: Travel Title, name: travel-title, widget: string }
+          - { label: Travel Title, name: travelTitle, widget: string }
       - file: "blog/index-pages/food.md"
         name: food-index
         label: Food Page
         fields:
-          - { label: Food Title, name: food-title, widget: string }
+          - { label: Food Title, name: foodTitle, widget: string }
       - file: "blog/index-pages/lifestyle.md"
         name: lifestyle-index
         label: Lifestyle Page
         fields:
-          - { label: Lifestyle Title, name: lifestyle-title, widget: string }
+          - { label: Lifestyle Title, name: lifestyleTitle, widget: string }
       - file: "blog/index-pages/pcos.md"
         name: pcos-index
         label: PCOS Page
         fields:
-          - { label: PCOS Title, name: pcos-title, widget: string }
+          - { label: PCOS Title, name: pcosTitle, widget: string }
 
   - name: fitness
     label: Fitness Pages
