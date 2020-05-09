@@ -7,73 +7,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: index-pages
-    label: Index Pages
+  - label: "Home Page"
+    name: "index"
     files:
-      - file: "blog/index-pages/index.md"
-        name: index
-        label: Landing Page
+      - label: "Home Page"
+        name: "about"
+        file: "blog/index-pages/index.md"
         fields:
-          - { label: Intro Title, name: introTitle, widget: string }
-          - { label: Intro Content, name: introContent, widget: markdown }
-          - { label: Intro Image, name: introImage, widget: image }
-      - file: blog/index-pages/fitness.md
-        name: fitness-index
-        label: Fitness Page
-        fields:
-          - { label: Fitness Title, name: fitnessTitle, widget: string }
-          - { label: Fitness Image, name: fitnessImage, widget: image }
-      - file: "blog/index-pages/travel.md"
-        name: travel-index
-        label: Travel Page
-        fields:
-          - { label: Travel Title, name: travelTitle, widget: string }
-      - file: "blog/index-pages/food.md"
-        name: food-index
-        label: Food Page
-        fields:
-          - { label: Food Title, name: foodTitle, widget: string }
-      - file: "blog/index-pages/lifestyle.md"
-        name: lifestyle-index
-        label: Lifestyle Page
-        fields:
-          - { label: Lifestyle Title, name: lifestyleTitle, widget: string }
-      - file: "blog/index-pages/pcos.md"
-        name: pcos-index
-        label: PCOS Page
-        fields:
-          - { label: PCOS Title, name: pcosTitle, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - { label: Image, name: image, widget: image }
 
-  - name: fitness
-    label: Fitness Pages
-    label_singular: Fitness Page
-    identifier_field: fitnessPostTitle
-    folder: blog/fitness
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
-    create: true
-    fields:
-      - { label: Fitness Post Title, name: fitnessPostTitle, widget: string }
-      - {
-          label: Fitness Post Published Date,
-          name: fitnessPostDate,
-          widget: datetime,
-        }
-      # TODO GENERATE SLUGS IN NODE?
-      - {
-          label: Fitness Post Top Content,
-          name: fitnessPostTopContent,
-          widget: markdown,
-        }
-      - {
-          label: Fitness Post Image,
-          name: fitnessPostImage,
-          widget: image,
-          allow_multiple: false,
-        }
-      - {
-          label: Fitness Post Content,
-          name: body,
-          widget: markdown,
-          hint: This is the body of the fitness page. This editor supports both rich-text and markdown entries,
-        }
+  - label: "Fitness Page"
+    name: "fitness-index"
+    files:
+      - label: "Fitness Page"
+        name: "fitness"
+        file: "blog/index-pages/fitness.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
