@@ -20,7 +20,7 @@ const IntroSection = () => {
   `)
 
   return (
-    <div>
+    <>
       <div className="flex flex-col">
         <h1 className="text-5xl text-center font-subheader font-medium leading-tight p-16">
           {data.markdownRemark.frontmatter.title}
@@ -35,7 +35,7 @@ const IntroSection = () => {
           className="h-352 rounded-tl-xl rounded-br-xl mx-8"
         />
       </div>
-    </div>
+    </>
   )
 }
 
