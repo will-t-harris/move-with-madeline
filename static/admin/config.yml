@@ -37,4 +37,6 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
       - { label: Body, name: body, widget: markdown }
