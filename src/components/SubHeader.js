@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const SubHeader = ({ isOpen }) => {
   return (
     <>
-      <div className="hidden md:flex md:justify-center">
+      <div className="hidden md:flex md:justify-center py-16">
         <ul className="flex flex-row font-subheader">
           <li className="mx-6 text-2xl">
             <Link to="/fitness">Fitness</Link>
