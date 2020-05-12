@@ -20,22 +20,22 @@ const IntroSection = () => {
   `)
 
   return (
-    <>
+    <div className="lg:flex">
       <div className="flex flex-col">
-        <h1 className="text-5xl text-center font-subheader font-medium leading-tight p-16">
+        <h1 className="text-5xl text-center font-subheader font-medium leading-tight p-16 lg:mt-40">
           {data.markdownRemark.frontmatter.title}
         </h1>
-        <p className="font-content mx-4 leading-relaxed opacity-75 pb-16 px-4">
+        <p className="font-content mx-4 leading-relaxed opacity-75 pb-16 px-4 lg:w-1/2 lg:mx-auto lg:mb-40">
           {data.markdownRemark.frontmatter.intro}
         </p>
       </div>
-      <div>
+      <div className="lg:w-1/2 lg:flex-end lg:mr-32 lg:my-40">
         <Img
           fluid={data.imageSharp.fluid}
           className="h-352 rounded-tl-xl rounded-br-xl mx-8"
         />
       </div>
-    </>
+    </div>
   )
 }
 
