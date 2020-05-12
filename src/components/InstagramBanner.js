@@ -23,19 +23,19 @@ const InstagramBanner = () => {
   `)
   return (
     <>
-      <div className="hidden lg:block lg:font-content lg:text-bgPrimary lg:text-center lg:mx-auto lg:bg-red-600 lg:-mb-16 lg:w-1/3 lg:h-10 lg:transform lg:translate-y-2 lg:shadow-md lg:whitespace-no-wrap">
-        <a
-          href="https://www.instagram.com/move.with.madeline/"
-          className="font-content font-bold"
-        >
+      <a
+        href="https://www.instagram.com/move.with.madeline/"
+        className="font-content font-bold"
+      >
+        <div className="hidden lg:block lg:font-content lg:text-bgPrimary lg:text-center lg:mx-auto lg:-mb-16 lg:bg-red-600 lg:w-1/3 lg:h-6 lg:transform lg:translate-y-2 lg:shadow-md lg:whitespace-no-wrap lg:rounded-sm">
           FOLLOW ME @move.with.madeline!
-        </a>
-      </div>
+        </div>
+      </a>
       <div className="flex flex-col banner-background mt-16 lg:flex-row">
-        <div className="mx-auto mt-6 bg-red-600 text-white font-content shadow-lg lg:hidden">
+        <div className="mx-auto mt-6 bg-red-600 text-white font-content rounded-sm shadow-lg lg:hidden">
           <a
             href="https://www.instagram.com/move.with.madeline/"
-            className=" px-2 font-content font-bold"
+            className="px-2 font-content font-bold"
           >
             FOLLOW ME @move.with.madeline!
           </a>
