@@ -22,7 +22,7 @@ const InstagramBanner = () => {
     }
   `)
   return (
-    <div className="flex flex-col banner-background my-16">
+    <div className="flex flex-col banner-background mt-16">
       <div className="mx-auto mt-6 bg-red-400 text-white font-content shadow-lg">
         <a href="https://www.instagram.com/move.with.madeline/" className="p-2">
           FOLLOW ME @move.with.madeline!
