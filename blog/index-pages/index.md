@@ -5,5 +5,5 @@ intro: "Movement to me isn't just a term for physical activity. It's a lifestyle
   moving! I live in Southern California with my husband, Brad, and our dog,
   Riley. I'm looking forward to sharing my life with you, and hopefully
   inspiring you to join my movement! "
-intro-image: /img/madeline-01.jpg
+image: /img/madeline-01.jpg
 ---
