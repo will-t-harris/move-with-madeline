@@ -12,7 +12,7 @@ const Header = (siteTitle) => {
     query HeaderQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 300) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -27,19 +27,19 @@ const Header = (siteTitle) => {
   return (
     <header>
       <div className="flex">
-        <div className="flex mx-auto py-2 pl-2">
+        <div className="flex mx-auto py-2 pl-2 max-w-full">
           <Img fixed={data.file.childImageSharp.fixed} />
+          <button className="flex lg:hidden" onClick={toggleMenu}>
+            <svg
+              className="fill-current h-6 w-6 text-black"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
         </div>
-        <button className="flex pt-4 lg:hidden" onClick={toggleMenu}>
-          <svg
-            className="fill-current h-6 w-6 text-black"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
       </div>
       <SubHeader isOpen={isOpen} />
     </header>
