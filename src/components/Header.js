@@ -26,11 +26,11 @@ const Header = (siteTitle) => {
 
   return (
     <header>
-      <div className="flex lg:hidden">
-        <div className="flex justify-center py-2 pl-2">
+      <div className="flex">
+        <div className="flex mx-auto py-2 pl-2">
           <Img fixed={data.file.childImageSharp.fixed} />
         </div>
-        <button className="flex pt-4" onClick={toggleMenu}>
+        <button className="flex pt-4 lg:hidden" onClick={toggleMenu}>
           <svg
             className="fill-current h-6 w-6 text-black"
             viewBox="0 0 20 20"
