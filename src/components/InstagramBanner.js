@@ -6,7 +6,7 @@ import InstagramPostCard from "./InstagramPostCard"
 const InstagramBanner = () => {
   const data = useStaticQuery(graphql`
     query {
-      allInstaNode(limit: 4, sort: { fields: timestamp, order: DESC }) {
+      allInstaNode(limit: 5, sort: { fields: timestamp, order: DESC }) {
         nodes {
           timestamp
           id
@@ -22,26 +22,39 @@ const InstagramBanner = () => {
     }
   `)
   return (
-    <div className="flex flex-col banner-background mt-16">
-      <div className="mx-auto mt-6 bg-red-400 text-white font-content shadow-lg">
-        <a href="https://www.instagram.com/move.with.madeline/" className="p-2">
+    <>
+      <div className="hidden lg:block lg:font-content lg:text-bgPrimary lg:text-center lg:mx-auto lg:bg-red-600 lg:-mb-16 lg:w-1/3 lg:h-10 lg:transform lg:translate-y-2 lg:shadow-md lg:whitespace-no-wrap">
+        <a
+          href="https://www.instagram.com/move.with.madeline/"
+          className="font-content font-bold"
+        >
           FOLLOW ME @move.with.madeline!
         </a>
       </div>
-      {data &&
-        data.allInstaNode.nodes.map((node) => (
+      <div className="flex flex-col banner-background mt-16 lg:flex-row">
+        <div className="mx-auto mt-6 bg-red-600 text-white font-content shadow-lg lg:hidden">
           <a
-            key={node.id}
-            href={`https://www.instagram.com/p/${node.id}`}
-            className="mx-auto my-6"
+            href="https://www.instagram.com/move.with.madeline/"
+            className=" px-2 font-content font-bold"
           >
-            <InstagramPostCard
-              key={node.id}
-              cardImgSrc={node.localFile.childImageSharp.fixed}
-            />
+            FOLLOW ME @move.with.madeline!
           </a>
-        ))}
-    </div>
+        </div>
+        {data &&
+          data.allInstaNode.nodes.map((node) => (
+            <a
+              key={node.id}
+              href={`https://www.instagram.com/p/${node.id}`}
+              className="mx-auto my-6"
+            >
+              <InstagramPostCard
+                key={node.id}
+                cardImgSrc={node.localFile.childImageSharp.fixed}
+              />
+            </a>
+          ))}
+      </div>
+    </>
   )
 }
 
