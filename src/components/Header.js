@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import SubHeader from "./SubHeader"
@@ -28,7 +28,9 @@ const Header = (siteTitle) => {
     <header>
       <div className="flex">
         <div className="flex mx-auto py-2 pl-2 max-w-full">
-          <Img fixed={data.file.childImageSharp.fixed} />
+          <Link to="/">
+            <Img fixed={data.file.childImageSharp.fixed} />
+          </Link>
           <button className="flex lg:hidden" onClick={toggleMenu}>
             <svg
               className="fill-current h-6 w-6 text-black"
