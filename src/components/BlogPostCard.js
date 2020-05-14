@@ -4,8 +4,13 @@ import { Link } from "gatsby"
 
 const BlogPostCard = ({ data }) => {
   return (
-    <div className="mx-auto w-352 rounded-lg shadow-lg">
-      <img src={data.frontmatter.topImage} className="rounded-lg" />
+    <div className="mx-auto w-352 rounded-lg shadow-lg mb-12 ">
+      <div>
+        <img
+          src={data.frontmatter.topImage}
+          className="rounded-lg h-56 w-full object-cover"
+        />
+      </div>
       <div className="flex flex-col px-6 py-4 bg-gray-200 rounded-b-lg">
         <h2 className="mb-2 font-bold text-textDark text-xl text-center font-content">
           {data.frontmatter.title}
