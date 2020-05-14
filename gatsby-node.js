@@ -19,6 +19,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
   const TravelPostTemplate = path.resolve("src/templates/travelPostTemplate.js")
   const FoodPostTemplate = path.resolve("src/templates/foodPostTemplate.js")
+  const LifestylePostTemplate = path.resolve(
+    "src/templates/lifestylePostTemplate.js"
+  )
 
   const result = await graphql(`
     {
@@ -45,6 +48,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
       foodPosts: allFile(filter: { sourceInstanceName: { eq: "food-posts" } }) {
+        nodes {
+          childMarkdownRemark {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+      lifestylePosts: allFile(
+        filter: { sourceInstanceName: { eq: "lifestyle-posts" } }
+      ) {
         nodes {
           childMarkdownRemark {
             fields {
@@ -91,6 +105,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: `food${childMarkdownRemark.fields.slug}`,
       component: FoodPostTemplate,
+      context: {
+        slug: childMarkdownRemark.fields.slug,
+      },
+    })
+  })
+
+  result.data.lifestylePosts.nodes.forEach((node) => {
+    const { childMarkdownRemark } = node
+
+    createPage({
+      path: `lifestyle${childMarkdownRemark.fields.slug}`,
+      component: LifestylePostTemplate,
       context: {
         slug: childMarkdownRemark.fields.slug,
       },

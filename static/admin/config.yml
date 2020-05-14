@@ -18,10 +18,10 @@ collections:
           - { label: Intro, name: intro, widget: markdown }
           - { label: Image, name: image, widget: image }
 
-  - label: Fitness Home Page
+  - label: Fitness Index Page
     name: fitness-index
     files:
-      - label: Fitness Home Page
+      - label: Fitness Index Page
         name: fitness
         file: blog/index-pages/fitness.md
         fields:
@@ -33,10 +33,10 @@ collections:
               widget: image,
             }
 
-  - label: Travel Home Page
+  - label: Travel Index Page
     name: travel-index
     files:
-      - label: Travel Home Page
+      - label: Travel Index Page
         name: travel
         file: blog/index-pages/travel.md
         fields:
@@ -48,10 +48,10 @@ collections:
               widget: image,
             }
 
-  - label: Food Home Page
+  - label: Food Index Page
     name: food-index
     files:
-      - label: Food Home Page
+      - label: Food Index Page
         name: food
         file: blog/index-pages/food.md
         fields:
@@ -60,6 +60,21 @@ collections:
               label: Image,
               name: image,
               hint: This image must be named 'food-index',
+              widget: image,
+            }
+
+  - label: Lifestyle Index Page
+    name: lifestyle-index
+    files:
+      - label: Lifestyle Index Page
+        name: lifestyle
+        file: blog/index-pages/lifestyle.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'lifestyle-index',
               widget: image,
             }
 
@@ -93,6 +108,19 @@ collections:
     label_singular: Food Post
     name: food-posts
     folder: blog/food
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Lifestyle Posts
+    label_singular: Lifestyle Post
+    name: lifestyle-posts
+    folder: blog/lifestyle
     create: true
     fields:
       - { label: Title, name: title, widget: string }
