@@ -26,7 +26,12 @@ collections:
         file: blog/index-pages/fitness.md
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'fitness-index',
+              widget: image,
+            }
 
   - label: Travel Home Page
     name: travel-index
@@ -36,7 +41,12 @@ collections:
         file: blog/index-pages/travel.md
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'travel-index',
+              widget: image,
+            }
 
   - label: Fitness Posts
     label_singular: Fitness Post
@@ -58,7 +68,7 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Published Date }
+      - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
       - { label: Button Text, name: buttonText, widget: string }
       - { label: Card Text, name: cardText, widget: string }
