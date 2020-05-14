@@ -69,5 +69,12 @@ module.exports = {
         path: `${__dirname}/blog/fitness`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `travel-posts`,
+        path: `${__dirname}/blog/travel`,
+      },
+    },
   ],
 }
