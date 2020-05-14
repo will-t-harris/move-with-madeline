@@ -69,5 +69,33 @@ module.exports = {
         path: `${__dirname}/blog/fitness`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `travel-posts`,
+        path: `${__dirname}/blog/travel`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `food-posts`,
+        path: `${__dirname}/blog/food`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `lifestyle-posts`,
+        path: `${__dirname}/blog/lifestyle`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pcos-posts`,
+        path: `${__dirname}/blog/pcos`,
+      },
+    },
   ],
 }

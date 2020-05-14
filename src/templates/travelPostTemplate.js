@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-const FitnessPostTemplate = ({ data }) => {
+const TravelPostTemplate = ({ data }) => {
   const {
     postContent: { childMarkdownRemark: post },
   } = data
@@ -22,12 +22,12 @@ const FitnessPostTemplate = ({ data }) => {
   )
 }
 
-export default FitnessPostTemplate
+export default TravelPostTemplate
 
 export const query = graphql`
-  query fitnessPostQuery($slug: String!) {
+  query travelPostQuery($slug: String!) {
     postContent: file(
-      sourceInstanceName: { eq: "fitness-posts" }
+      sourceInstanceName: { eq: "travel-posts" }
       childMarkdownRemark: { fields: { slug: { eq: $slug } } }
     ) {
       id

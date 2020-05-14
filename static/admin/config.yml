@@ -18,20 +18,137 @@ collections:
           - { label: Intro, name: intro, widget: markdown }
           - { label: Image, name: image, widget: image }
 
-  - label: Fitness Home Page
+  - label: Fitness Index Page
     name: fitness-index
     files:
-      - label: Fitness Home Page
+      - label: Fitness Index Page
         name: fitness
         file: blog/index-pages/fitness.md
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'fitness-index',
+              widget: image,
+            }
+
+  - label: Travel Index Page
+    name: travel-index
+    files:
+      - label: Travel Index Page
+        name: travel
+        file: blog/index-pages/travel.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'travel-index',
+              widget: image,
+            }
+
+  - label: Food Index Page
+    name: food-index
+    files:
+      - label: Food Index Page
+        name: food
+        file: blog/index-pages/food.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'food-index',
+              widget: image,
+            }
+
+  - label: Lifestyle Index Page
+    name: lifestyle-index
+    files:
+      - label: Lifestyle Index Page
+        name: lifestyle
+        file: blog/index-pages/lifestyle.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'lifestyle-index',
+              widget: image,
+            }
+
+  - label: PCOS Index Page
+    name: pcos-index
+    files:
+      - label: PCOS Index Page
+        name: pcos
+        file: blog/index-pages/pcos.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'pcos-index',
+              widget: image,
+            }
 
   - label: Fitness Posts
     label_singular: Fitness Post
     name: fitness-posts
     folder: blog/fitness
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Travel Posts
+    label_singular: Travel Post
+    name: travel-posts
+    folder: blog/travel
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Food Posts
+    label_singular: Food Post
+    name: food-posts
+    folder: blog/food
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Lifestyle Posts
+    label_singular: Lifestyle Post
+    name: lifestyle-posts
+    folder: blog/lifestyle
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: PCOS Posts
+    label_singular: PCOS Post
+    name: pcos-posts
+    folder: blog/pcos
     create: true
     fields:
       - { label: Title, name: title, widget: string }

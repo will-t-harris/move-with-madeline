@@ -4,26 +4,25 @@ import Img from "gatsby-image"
 
 import BlogPostCard from "../components/BlogPostCard"
 
-const FitnessPage = () => {
+const TravelPage = () => {
   const data = useStaticQuery(graphql`
-    query fitnessPageQuery {
-      fitnessIndexContent: markdownRemark(
-        fields: { slug: { eq: "/fitness/" } }
-      ) {
+    query travelPageQuery {
+      travelIndexContent: markdownRemark(fields: { slug: { eq: "/travel/" } }) {
         frontmatter {
           title
+          image
         }
       }
-      fitnessIndexImage: imageSharp(
-        fluid: { originalName: { regex: "/fitness-index/" } }
+      travelIndexImage: imageSharp(
+        fluid: { originalName: { regex: "/travel-index/" } }
       ) {
         id
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
-      fitnessPost: allFile(
-        filter: { sourceInstanceName: { eq: "fitness-posts" } }
+      travelPost: allFile(
+        filter: { sourceInstanceName: { eq: "travel-posts" } }
       ) {
         nodes {
           id
@@ -48,17 +47,17 @@ const FitnessPage = () => {
   return (
     <>
       <Img
-        fluid={data.fitnessIndexImage.fluid}
+        fluid={data.travelIndexImage.fluid}
         className="index-image-clip-path h-552"
       />
       <div>
         <h1 className="text-center text-3xl font-bold font-content mb-16">
-          {data.fitnessIndexContent.frontmatter.title.toUpperCase()}
+          {data.travelIndexContent.frontmatter.title.toUpperCase()}
         </h1>
       </div>
       <div className="grid lg:grid-cols-3 lg:grid-rows-6 gap-1">
-        {data.fitnessPost &&
-          data.fitnessPost.nodes.map((node) => (
+        {data.travelPost &&
+          data.travelPost.nodes.map((node) => (
             <BlogPostCard
               key={node.id}
               data={node.childMarkdownRemark}
@@ -70,4 +69,4 @@ const FitnessPage = () => {
   )
 }
 
-export default FitnessPage
+export default TravelPage
