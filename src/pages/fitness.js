@@ -53,11 +53,11 @@ const FitnessPage = () => {
         />
       </div>
       <div>
-        <h1 className="text-center text-2xl font-content">
+        <h1 className="text-center text-3xl font-bold font-content mb-16">
           {data.fitnessIndexContent.frontmatter.title.toUpperCase()}
         </h1>
       </div>
-      <div className="grid">
+      <div className="grid lg:grid-cols-3 lg:grid-rows-6 gap-1">
         {data.fitnessPost &&
           data.fitnessPost.nodes.map((node) => (
             <BlogPostCard key={node.id} data={node.childMarkdownRemark} />
