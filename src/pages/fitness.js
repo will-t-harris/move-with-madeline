@@ -48,7 +48,7 @@ const FitnessPage = () => {
     <>
       <Img
         fluid={data.fitnessIndexImage.fluid}
-        className="index-image-clip-path"
+        className="index-image-clip-path h-552"
       />
       <div>
         <h1 className="text-center text-3xl font-bold font-content mb-16">
