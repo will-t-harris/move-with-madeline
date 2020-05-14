@@ -48,6 +48,21 @@ collections:
               widget: image,
             }
 
+  - label: Food Home Page
+    name: food-index
+    files:
+      - label: Food Home Page
+        name: food
+        file: blog/index-pages/food.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Image,
+              name: image,
+              hint: This image must be named 'food-index',
+              widget: image,
+            }
+
   - label: Fitness Posts
     label_singular: Fitness Post
     name: fitness-posts
@@ -65,6 +80,19 @@ collections:
     label_singular: Travel Post
     name: travel-posts
     folder: blog/travel
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Food Posts
+    label_singular: Food Post
+    name: food-posts
+    folder: blog/food
     create: true
     fields:
       - { label: Title, name: title, widget: string }

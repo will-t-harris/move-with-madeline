@@ -8,6 +8,8 @@ const BlogPostCard = ({ data, source }) => {
       ? "fitness"
       : source === "travel-posts"
       ? "travel"
+      : source === "food-posts"
+      ? "food"
       : ""
 
   return (
