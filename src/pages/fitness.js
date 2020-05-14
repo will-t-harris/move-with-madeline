@@ -39,6 +39,7 @@ const FitnessPage = () => {
               slug
             }
           }
+          sourceInstanceName
         }
       }
     }
@@ -58,7 +59,11 @@ const FitnessPage = () => {
       <div className="grid lg:grid-cols-3 lg:grid-rows-6 gap-1">
         {data.fitnessPost &&
           data.fitnessPost.nodes.map((node) => (
-            <BlogPostCard key={node.id} data={node.childMarkdownRemark} />
+            <BlogPostCard
+              key={node.id}
+              data={node.childMarkdownRemark}
+              source={node.sourceInstanceName}
+            />
           ))}
       </div>
     </>

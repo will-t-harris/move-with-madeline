@@ -38,11 +38,12 @@ const TravelPage = () => {
               slug
             }
           }
+          sourceInstanceName
         }
       }
     }
   `)
-  console.log(data)
+
   return (
     <>
       <Img
@@ -57,7 +58,11 @@ const TravelPage = () => {
       <div className="grid lg:grid-cols-3 lg:grid-rows-6 gap-1">
         {data.travelPost &&
           data.travelPost.nodes.map((node) => (
-            <BlogPostCard key={node.id} data={node.childMarkdownRemark} />
+            <BlogPostCard
+              key={node.id}
+              data={node.childMarkdownRemark}
+              source={node.sourceInstanceName}
+            />
           ))}
       </div>
     </>
