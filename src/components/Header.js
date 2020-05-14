@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import classnames from "classnames"
 
 import SubHeader from "./SubHeader"
 
@@ -24,6 +25,11 @@ const Header = (siteTitle) => {
     setIsOpen(!isOpen)
   }
 
+  let sliderButtonClasses = classnames({
+    "text-white": isOpen,
+    "text-black": !isOpen,
+  })
+
   return (
     <header>
       <div className="flex">
@@ -31,9 +37,9 @@ const Header = (siteTitle) => {
           <Link to="/">
             <Img fixed={data.file.childImageSharp.fixed} />
           </Link>
-          <button className="flex lg:hidden" onClick={toggleMenu}>
+          <button className="flex z-20 lg:hidden" onClick={toggleMenu}>
             <svg
-              className="fill-current h-6 w-6 text-black"
+              className={`fill-current h-6 w-6 ${sliderButtonClasses}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
