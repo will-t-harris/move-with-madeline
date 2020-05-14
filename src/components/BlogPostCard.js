@@ -2,7 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const BlogPostCard = ({ data }) => {
+const BlogPostCard = ({ data, source }) => {
+  const basePath =
+    source === "fitness-posts"
+      ? "fitness"
+      : source === "travel-posts"
+      ? "travel"
+      : ""
+
   return (
     <div className="mx-auto w-352 rounded-lg shadow-lg mb-12 ">
       <div>
@@ -19,7 +26,7 @@ const BlogPostCard = ({ data }) => {
           {data.frontmatter.cardText}
         </p>
         <Link
-          to={`/fitness/${data.fields.slug}`}
+          to={`/${basePath}/${data.fields.slug}`}
           className="font-content text-center bg-textDark text-bgPrimary py-2 rounded-lg"
         >
           READ MORE
@@ -33,4 +40,5 @@ export default BlogPostCard
 
 BlogPostCard.propTypes = {
   data: PropTypes.object.isRequired,
+  source: PropTypes.string.isRequired,
 }
