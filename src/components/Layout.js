@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
       <Header
         siteTitle={data.site.siteMetadata.title}
         isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
         toggleMobileMenuOpen={toggleMobileMenu}
       />
       <main>{children}</main>

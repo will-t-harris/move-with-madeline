@@ -6,7 +6,12 @@ import classnames from "classnames"
 
 import SubHeader from "./SubHeader"
 
-const Header = ({ siteTitle, isMobileMenuOpen, toggleMobileMenuOpen }) => {
+const Header = ({
+  siteTitle,
+  isMobileMenuOpen,
+  setIsMobileMenuOpen,
+  toggleMobileMenuOpen,
+}) => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
@@ -46,7 +51,10 @@ const Header = ({ siteTitle, isMobileMenuOpen, toggleMobileMenuOpen }) => {
           </button>
         </div>
       </div>
-      <SubHeader isMobileMenuOpen={isMobileMenuOpen} />
+      <SubHeader
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
     </header>
   )
 }
