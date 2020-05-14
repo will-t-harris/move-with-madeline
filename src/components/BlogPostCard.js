@@ -12,6 +12,8 @@ const BlogPostCard = ({ data, source }) => {
       ? "food"
       : source === "lifestyle-posts"
       ? "lifestyle"
+      : source === "pcos-posts"
+      ? "pcos"
       : ""
 
   return (

@@ -20,7 +20,7 @@ const SubHeader = ({ isOpen }) => {
             <Link to="/lifestyle">Lifestyle</Link>
           </li>
           <li className="mx-6 text-2xl">
-            <Link to="#">PCOS</Link>
+            <Link to="/pcos">PCOS</Link>
           </li>
         </ul>
       </div>

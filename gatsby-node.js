@@ -22,6 +22,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const LifestylePostTemplate = path.resolve(
     "src/templates/lifestylePostTemplate.js"
   )
+  const PCOSPostTemplate = path.resolve("src/templates/pcosPostTemplate.js")
 
   const result = await graphql(`
     {
@@ -59,6 +60,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       lifestylePosts: allFile(
         filter: { sourceInstanceName: { eq: "lifestyle-posts" } }
       ) {
+        nodes {
+          childMarkdownRemark {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+      pcosPosts: allFile(filter: { sourceInstanceName: { eq: "pcos-posts" } }) {
         nodes {
           childMarkdownRemark {
             fields {
@@ -117,6 +127,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: `lifestyle${childMarkdownRemark.fields.slug}`,
       component: LifestylePostTemplate,
+      context: {
+        slug: childMarkdownRemark.fields.slug,
+      },
+    })
+  })
+
+  result.data.pcosPosts.nodes.forEach((node) => {
+    const { childMarkdownRemark } = node
+
+    createPage({
+      path: `pcos${childMarkdownRemark.fields.slug}`,
+      component: PCOSPostTemplate,
       context: {
         slug: childMarkdownRemark.fields.slug,
       },
