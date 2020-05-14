@@ -28,6 +28,16 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
 
+  - label: Travel Home Page
+    name: travel-index
+    files:
+      - label: Travel Home Page
+        name: travel
+        file: blog/index-pages/travel.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+
   - label: Fitness Posts
     label_singular: Fitness Post
     name: fitness-posts
@@ -36,6 +46,19 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
+      - { label: Top Image, name: topImage, widget: image }
+      - { label: Button Text, name: buttonText, widget: string }
+      - { label: Card Text, name: cardText, widget: string }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: Travel Posts
+    label_singular: Travel Post
+    name: travel-posts
+    folder: blog/travel
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Published Date }
       - { label: Top Image, name: topImage, widget: image }
       - { label: Button Text, name: buttonText, widget: string }
       - { label: Card Text, name: cardText, widget: string }
