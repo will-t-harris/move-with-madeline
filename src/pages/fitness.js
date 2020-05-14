@@ -15,7 +15,7 @@ const FitnessPage = () => {
         }
       }
       fitnessIndexImage: imageSharp(
-        fluid: { originalName: { eq: "fitness-01.png" } }
+        fluid: { originalName: { regex: "/fitness-index/" } }
       ) {
         id
         fluid(quality: 90, maxWidth: 1920) {
@@ -46,12 +46,10 @@ const FitnessPage = () => {
 
   return (
     <>
-      <div>
-        <Img
-          fluid={data.fitnessIndexImage.fluid}
-          className="index-image-clip-path"
-        />
-      </div>
+      <Img
+        fluid={data.fitnessIndexImage.fluid}
+        className="index-image-clip-path"
+      />
       <div>
         <h1 className="text-center text-3xl font-bold font-content mb-16">
           {data.fitnessIndexContent.frontmatter.title.toUpperCase()}
