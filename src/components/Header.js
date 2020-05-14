@@ -6,9 +6,7 @@ import classnames from "classnames"
 
 import SubHeader from "./SubHeader"
 
-const Header = (siteTitle) => {
-  const [isOpen, setIsOpen] = useState(false)
-
+const Header = ({ siteTitle, isMobileMenuOpen, toggleMobileMenuOpen }) => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       file(relativePath: { eq: "madeline-logo.png" }) {
@@ -21,13 +19,9 @@ const Header = (siteTitle) => {
     }
   `)
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
   let sliderButtonClasses = classnames({
-    "text-white": isOpen,
-    "text-black": !isOpen,
+    "text-white": isMobileMenuOpen,
+    "text-black": !isMobileMenuOpen,
   })
 
   return (
@@ -37,7 +31,10 @@ const Header = (siteTitle) => {
           <Link to="/">
             <Img fixed={data.file.childImageSharp.fixed} />
           </Link>
-          <button className="flex z-20 lg:hidden" onClick={toggleMenu}>
+          <button
+            className="flex z-20 lg:hidden"
+            onClick={toggleMobileMenuOpen}
+          >
             <svg
               className={`fill-current h-6 w-6 ${sliderButtonClasses}`}
               viewBox="0 0 20 20"
@@ -49,7 +46,7 @@ const Header = (siteTitle) => {
           </button>
         </div>
       </div>
-      <SubHeader isOpen={isOpen} />
+      <SubHeader isMobileMenuOpen={isMobileMenuOpen} />
     </header>
   )
 }
@@ -62,4 +59,6 @@ Header.defaultProps = {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  isOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
 }
