@@ -8,7 +8,7 @@ const FitnessPostTemplate = ({ data }) => {
 
   return (
     <div>
-      <img src={post.frontmatter.topImage} />
+      <img src={post.frontmatter.topImage} className="w-full" />
       <div>
         <h1 className="text-center text-2xl font-content">
           {post.frontmatter.title}
