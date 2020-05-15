@@ -14,6 +14,9 @@ module.exports = {
       borderRadius: {
         xl: "4rem",
       },
+      lineHeight: {
+        "20": "5rem",
+      },
     },
     fontFamily: {
       subheader: ["Bubbler One"],
