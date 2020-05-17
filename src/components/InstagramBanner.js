@@ -27,12 +27,12 @@ const InstagramBanner = () => {
         href="https://www.instagram.com/move.with.madeline/"
         className="font-content font-bold"
       >
-        <div className="hidden lg:block lg:font-content lg:text-bgPrimary lg:text-center lg:mx-auto lg:-mb-16 lg:bg-red-600 lg:w-1/3 lg:h-6 lg:transform lg:translate-y-2 lg:shadow-md lg:whitespace-no-wrap lg:rounded-sm">
+        <div className="hidden lg:block lg:font-content lg:text-textDark lg:text-center lg:mx-auto lg:bg-instagramButton lg:w-1/3 lg:h-6 lg:whitespace-no-wrap lg:rounded-t-md">
           FOLLOW ME @move.with.madeline
         </div>
       </a>
-      <div className="flex flex-col banner-background mt-16 lg:flex-row">
-        <div className="mx-auto mt-6 bg-red-600 text-white font-content rounded-sm shadow-lg lg:hidden">
+      <div className="flex flex-col banner-background shadow-inner lg:flex-row">
+        <div className="mx-auto mt-6 bg-instagramButton text-white font-content rounded-sm shadow-lg lg:hidden">
           <a
             href="https://www.instagram.com/move.with.madeline/"
             className="px-2 font-content font-bold"
