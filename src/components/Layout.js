@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import classnames from "classnames"
 
 import Header from "./Header"
 import Footer from "./Footer"
@@ -9,6 +10,7 @@ import "../../src/index.css"
 
 const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,6 +20,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  const stopBodyScroll = classnames({
+    fixed: isMobileMenuOpen,
+  })
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -31,7 +37,7 @@ const Layout = ({ children }) => {
         setIsMobileMenuOpen={setIsMobileMenuOpen}
         toggleMobileMenuOpen={toggleMobileMenu}
       />
-      <main>{children}</main>
+      <main className={stopBodyScroll}>{children}</main>
       <Footer />
     </>
   )
