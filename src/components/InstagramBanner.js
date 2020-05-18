@@ -12,7 +12,7 @@ const InstagramBanner = () => {
           id
           localFile {
             childImageSharp {
-              fixed(width: 200, height: 200) {
+              fixed(width: 250, height: 250) {
                 ...GatsbyImageSharpFixed_withWebp
               }
             }
@@ -23,6 +23,9 @@ const InstagramBanner = () => {
   `)
   return (
     <>
+<<<<<<< HEAD
+      <div className="flex flex-col banner-background lg:flex-row">
+=======
       <a
         href="https://www.instagram.com/move.with.madeline/"
         className="font-content font-bold"
@@ -40,6 +43,7 @@ const InstagramBanner = () => {
             FOLLOW ME @move.with.madeline
           </a>
         </div>
+>>>>>>> master
         {data &&
           data.allInstaNode.nodes.map((node) => (
             <a

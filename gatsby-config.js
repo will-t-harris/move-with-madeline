@@ -90,12 +90,5 @@ module.exports = {
         path: `${__dirname}/blog/lifestyle`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pcos-posts`,
-        path: `${__dirname}/blog/pcos`,
-      },
-    },
   ],
 }

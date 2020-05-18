@@ -22,7 +22,7 @@ const IntroSection = () => {
   `)
 
   return (
-    <div className="lg:flex">
+    <div className="lg:flex bg-indigo-100">
       <div className="flex flex-col">
         <h1 className="text-5xl text-textDark text-center font-subheader font-medium leading-tight p-16 lg:mt-32">
           {data.file.childMarkdownRemark.frontmatter.title}

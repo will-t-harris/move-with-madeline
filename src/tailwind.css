@@ -11,5 +11,21 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 
+/* Markdown Headers */
+.markdown h1 {
+  @apply text-4xl text-textDark my-12 font-bold font-content;
+}
+
+/* Markdown Content */
+.markdown p {
+  @apply mx-4 mb-8 text-xl font-content leading-loose;
+}
+
+@media (min-width: 1024px) {
+  .markdown p {
+    @apply mx-auto w-1/2;
+  }
+}
+
 /* purgecss end ignore */
 @tailwind utilities;
