@@ -12,7 +12,7 @@ const InstagramBanner = () => {
           id
           localFile {
             childImageSharp {
-              fixed(width: 200, height: 200) {
+              fixed(width: 250, height: 250) {
                 ...GatsbyImageSharpFixed_withWebp
               }
             }
@@ -23,23 +23,7 @@ const InstagramBanner = () => {
   `)
   return (
     <>
-      <a
-        href="https://www.instagram.com/move.with.madeline/"
-        className="font-content font-bold"
-      >
-        <div className="hidden lg:block lg:font-content lg:text-bgPrimary lg:text-center lg:mx-auto lg:-mb-16 lg:bg-red-600 lg:w-1/3 lg:h-6 lg:transform lg:translate-y-2 lg:shadow-md lg:whitespace-no-wrap lg:rounded-sm">
-          FOLLOW ME @move.with.madeline
-        </div>
-      </a>
       <div className="flex flex-col banner-background mt-16 lg:flex-row">
-        <div className="mx-auto mt-6 bg-red-600 text-white font-content rounded-sm shadow-lg lg:hidden">
-          <a
-            href="https://www.instagram.com/move.with.madeline/"
-            className="px-2 font-content font-bold"
-          >
-            FOLLOW ME @move.with.madeline
-          </a>
-        </div>
         {data &&
           data.allInstaNode.nodes.map((node) => (
             <a
