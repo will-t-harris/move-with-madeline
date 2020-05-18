@@ -23,7 +23,7 @@ const InstagramBanner = () => {
   `)
   return (
     <>
-      <div className="flex flex-col banner-background mt-16 lg:flex-row">
+      <div className="flex flex-col banner-background lg:flex-row">
         {data &&
           data.allInstaNode.nodes.map((node) => (
             <a
