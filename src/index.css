@@ -1839,6 +1839,12 @@ video {
   border-color: rgba(2, 16, 26, var(--divide-opacity));
 }
 
+.divide-instagramButton > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #CD8380;
+  border-color: rgba(205, 131, 128, var(--divide-opacity));
+}
+
 .divide-opacity-0 > :not(template) ~ :not(template) {
   --divide-opacity: 0;
 }
@@ -2501,6 +2507,12 @@ video {
   background-color: rgba(2, 16, 26, var(--bg-opacity));
 }
 
+.bg-instagramButton {
+  --bg-opacity: 1;
+  background-color: #CD8380;
+  background-color: rgba(205, 131, 128, var(--bg-opacity));
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -3079,6 +3091,12 @@ video {
   background-color: rgba(2, 16, 26, var(--bg-opacity));
 }
 
+.hover\:bg-instagramButton:hover {
+  --bg-opacity: 1;
+  background-color: #CD8380;
+  background-color: rgba(205, 131, 128, var(--bg-opacity));
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -3655,6 +3673,12 @@ video {
   --bg-opacity: 1;
   background-color: #02101A;
   background-color: rgba(2, 16, 26, var(--bg-opacity));
+}
+
+.focus\:bg-instagramButton:focus {
+  --bg-opacity: 1;
+  background-color: #CD8380;
+  background-color: rgba(205, 131, 128, var(--bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -4375,6 +4399,12 @@ video {
   border-color: rgba(2, 16, 26, var(--border-opacity));
 }
 
+.border-instagramButton {
+  --border-opacity: 1;
+  border-color: #CD8380;
+  border-color: rgba(205, 131, 128, var(--border-opacity));
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -4953,6 +4983,12 @@ video {
   border-color: rgba(2, 16, 26, var(--border-opacity));
 }
 
+.hover\:border-instagramButton:hover {
+  --border-opacity: 1;
+  border-color: #CD8380;
+  border-color: rgba(205, 131, 128, var(--border-opacity));
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -5529,6 +5565,12 @@ video {
   --border-opacity: 1;
   border-color: #02101A;
   border-color: rgba(2, 16, 26, var(--border-opacity));
+}
+
+.focus\:border-instagramButton:focus {
+  --border-opacity: 1;
+  border-color: #CD8380;
+  border-color: rgba(205, 131, 128, var(--border-opacity));
 }
 
 .border-opacity-0 {
@@ -11829,6 +11871,36 @@ video {
   color: rgba(2, 16, 26, var(--placeholder-opacity));
 }
 
+.placeholder-instagramButton::-webkit-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.placeholder-instagramButton::-moz-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.placeholder-instagramButton:-ms-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.placeholder-instagramButton::-ms-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.placeholder-instagramButton::placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -14719,6 +14791,36 @@ video {
   color: rgba(2, 16, 26, var(--placeholder-opacity));
 }
 
+.focus\:placeholder-instagramButton:focus::-webkit-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-instagramButton:focus::-moz-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-instagramButton:focus:-ms-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-instagramButton:focus::-ms-input-placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-instagramButton:focus::placeholder {
+  --placeholder-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--placeholder-opacity));
+}
+
 .placeholder-opacity-0::-webkit-input-placeholder {
   --placeholder-opacity: 0;
 }
@@ -15772,6 +15874,12 @@ video {
   color: rgba(2, 16, 26, var(--text-opacity));
 }
 
+.text-instagramButton {
+  --text-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--text-opacity));
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -16350,6 +16458,12 @@ video {
   color: rgba(2, 16, 26, var(--text-opacity));
 }
 
+.hover\:text-instagramButton:hover {
+  --text-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--text-opacity));
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -16926,6 +17040,12 @@ video {
   --text-opacity: 1;
   color: #02101A;
   color: rgba(2, 16, 26, var(--text-opacity));
+}
+
+.focus\:text-instagramButton:focus {
+  --text-opacity: 1;
+  color: #CD8380;
+  color: rgba(205, 131, 128, var(--text-opacity));
 }
 
 .text-opacity-0 {
@@ -21217,6 +21337,12 @@ video {
     border-color: rgba(2, 16, 26, var(--divide-opacity));
   }
 
+  .sm\:divide-instagramButton > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--divide-opacity));
+  }
+
   .sm\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -21879,6 +22005,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .sm\:bg-instagramButton {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -22457,6 +22589,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .sm\:hover\:bg-instagramButton:hover {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -23033,6 +23171,12 @@ video {
     --bg-opacity: 1;
     background-color: #02101A;
     background-color: rgba(2, 16, 26, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-instagramButton:focus {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -23753,6 +23897,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .sm\:border-instagramButton {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -24331,6 +24481,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .sm\:hover\:border-instagramButton:hover {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -24907,6 +25063,12 @@ video {
     --border-opacity: 1;
     border-color: #02101A;
     border-color: rgba(2, 16, 26, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-instagramButton:focus {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -31207,6 +31369,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .sm\:placeholder-instagramButton::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-instagramButton::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-instagramButton:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-instagramButton::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-instagramButton::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -34097,6 +34289,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .sm\:focus\:placeholder-instagramButton:focus::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-instagramButton:focus::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-instagramButton:focus:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-instagramButton:focus::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-instagramButton:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .sm\:placeholder-opacity-0::-webkit-input-placeholder {
     --placeholder-opacity: 0;
   }
@@ -35150,6 +35372,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .sm\:text-instagramButton {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -35728,6 +35956,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .sm\:hover\:text-instagramButton:hover {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -36304,6 +36538,12 @@ video {
     --text-opacity: 1;
     color: #02101A;
     color: rgba(2, 16, 26, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-instagramButton:focus {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -40596,6 +40836,12 @@ video {
     border-color: rgba(2, 16, 26, var(--divide-opacity));
   }
 
+  .md\:divide-instagramButton > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--divide-opacity));
+  }
+
   .md\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -41258,6 +41504,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .md\:bg-instagramButton {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -41836,6 +42088,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .md\:hover\:bg-instagramButton:hover {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -42412,6 +42670,12 @@ video {
     --bg-opacity: 1;
     background-color: #02101A;
     background-color: rgba(2, 16, 26, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-instagramButton:focus {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -43132,6 +43396,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .md\:border-instagramButton {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -43710,6 +43980,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .md\:hover\:border-instagramButton:hover {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -44286,6 +44562,12 @@ video {
     --border-opacity: 1;
     border-color: #02101A;
     border-color: rgba(2, 16, 26, var(--border-opacity));
+  }
+
+  .md\:focus\:border-instagramButton:focus {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -50586,6 +50868,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .md\:placeholder-instagramButton::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-instagramButton::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-instagramButton:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-instagramButton::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-instagramButton::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -53476,6 +53788,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .md\:focus\:placeholder-instagramButton:focus::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-instagramButton:focus::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-instagramButton:focus:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-instagramButton:focus::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-instagramButton:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .md\:placeholder-opacity-0::-webkit-input-placeholder {
     --placeholder-opacity: 0;
   }
@@ -54529,6 +54871,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .md\:text-instagramButton {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -55107,6 +55455,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .md\:hover\:text-instagramButton:hover {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -55683,6 +56037,12 @@ video {
     --text-opacity: 1;
     color: #02101A;
     color: rgba(2, 16, 26, var(--text-opacity));
+  }
+
+  .md\:focus\:text-instagramButton:focus {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -59975,6 +60335,12 @@ video {
     border-color: rgba(2, 16, 26, var(--divide-opacity));
   }
 
+  .lg\:divide-instagramButton > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--divide-opacity));
+  }
+
   .lg\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -60637,6 +61003,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .lg\:bg-instagramButton {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -61215,6 +61587,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .lg\:hover\:bg-instagramButton:hover {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -61791,6 +62169,12 @@ video {
     --bg-opacity: 1;
     background-color: #02101A;
     background-color: rgba(2, 16, 26, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-instagramButton:focus {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -62511,6 +62895,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .lg\:border-instagramButton {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -63089,6 +63479,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .lg\:hover\:border-instagramButton:hover {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -63665,6 +64061,12 @@ video {
     --border-opacity: 1;
     border-color: #02101A;
     border-color: rgba(2, 16, 26, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-instagramButton:focus {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -69965,6 +70367,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .lg\:placeholder-instagramButton::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-instagramButton::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-instagramButton:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-instagramButton::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-instagramButton::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -72855,6 +73287,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .lg\:focus\:placeholder-instagramButton:focus::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-instagramButton:focus::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-instagramButton:focus:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-instagramButton:focus::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-instagramButton:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .lg\:placeholder-opacity-0::-webkit-input-placeholder {
     --placeholder-opacity: 0;
   }
@@ -73908,6 +74370,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .lg\:text-instagramButton {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -74486,6 +74954,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .lg\:hover\:text-instagramButton:hover {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -75062,6 +75536,12 @@ video {
     --text-opacity: 1;
     color: #02101A;
     color: rgba(2, 16, 26, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-instagramButton:focus {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -79354,6 +79834,12 @@ video {
     border-color: rgba(2, 16, 26, var(--divide-opacity));
   }
 
+  .xl\:divide-instagramButton > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--divide-opacity));
+  }
+
   .xl\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -80016,6 +80502,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .xl\:bg-instagramButton {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -80594,6 +81086,12 @@ video {
     background-color: rgba(2, 16, 26, var(--bg-opacity));
   }
 
+  .xl\:hover\:bg-instagramButton:hover {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -81170,6 +81668,12 @@ video {
     --bg-opacity: 1;
     background-color: #02101A;
     background-color: rgba(2, 16, 26, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-instagramButton:focus {
+    --bg-opacity: 1;
+    background-color: #CD8380;
+    background-color: rgba(205, 131, 128, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -81890,6 +82394,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .xl\:border-instagramButton {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -82468,6 +82978,12 @@ video {
     border-color: rgba(2, 16, 26, var(--border-opacity));
   }
 
+  .xl\:hover\:border-instagramButton:hover {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -83044,6 +83560,12 @@ video {
     --border-opacity: 1;
     border-color: #02101A;
     border-color: rgba(2, 16, 26, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-instagramButton:focus {
+    --border-opacity: 1;
+    border-color: #CD8380;
+    border-color: rgba(205, 131, 128, var(--border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -89344,6 +89866,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .xl\:placeholder-instagramButton::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-instagramButton::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-instagramButton:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-instagramButton::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-instagramButton::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -92234,6 +92786,36 @@ video {
     color: rgba(2, 16, 26, var(--placeholder-opacity));
   }
 
+  .xl\:focus\:placeholder-instagramButton:focus::-webkit-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-instagramButton:focus::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-instagramButton:focus:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-instagramButton:focus::-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-instagramButton:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--placeholder-opacity));
+  }
+
   .xl\:placeholder-opacity-0::-webkit-input-placeholder {
     --placeholder-opacity: 0;
   }
@@ -93287,6 +93869,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .xl\:text-instagramButton {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -93865,6 +94453,12 @@ video {
     color: rgba(2, 16, 26, var(--text-opacity));
   }
 
+  .xl\:hover\:text-instagramButton:hover {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -94441,6 +95035,12 @@ video {
     --text-opacity: 1;
     color: #02101A;
     color: rgba(2, 16, 26, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-instagramButton:focus {
+    --text-opacity: 1;
+    color: #CD8380;
+    color: rgba(205, 131, 128, var(--text-opacity));
   }
 
   .xl\:text-opacity-0 {

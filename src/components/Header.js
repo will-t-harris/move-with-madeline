@@ -32,7 +32,7 @@ const Header = ({
   return (
     <header>
       <div className="flex">
-        <div className="flex mx-auto py-2 pl-2 max-w-full">
+        <div className="flex mx-auto pt-12 pl-2 max-w-full">
           <Link to="/">
             <Img fixed={data.file.childImageSharp.fixed} />
           </Link>

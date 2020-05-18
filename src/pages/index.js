@@ -9,7 +9,7 @@ import InstagramBanner from "../components/InstagramBanner"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query homeQuery {
-      file(relativePath: { eq: "madeline-home-placeholder.jpg" }) {
+      file(relativePath: { eq: "madeline-home-02.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp

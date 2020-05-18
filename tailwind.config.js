@@ -6,6 +6,7 @@ module.exports = {
         primary: "#5A89AC",
         bgPrimary: "#FFFCED",
         textDark: "#02101A",
+        instagramButton: "#CD8380",
       },
       spacing: {
         "352": "22rem",

@@ -21,18 +21,18 @@ const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
   return (
     <>
-      <div className="hidden md:flex md:justify-center py-16">
+      <div className="hidden md:flex md:justify-center py-12">
         <ul className="flex flex-row font-subheader">
-          <li className="mx-6 text-2xl">
+          <li className="mx-6 text-2xl text-textDark">
             <Link to="/fitness">Fitness</Link>
           </li>
-          <li className="mx-6 text-2xl">
+          <li className="mx-6 text-2xl text-textDark">
             <Link to="/travel">Travel</Link>
           </li>
-          <li className="mx-6 text-2xl">
+          <li className="mx-6 text-2xl text-textDark">
             <Link to="/food">Food</Link>
           </li>
-          <li className="mx-6 text-2xl">
+          <li className="mx-6 text-2xl text-textDark">
             <Link to="/lifestyle">Lifestyle</Link>
           </li>
         </ul>
