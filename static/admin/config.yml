@@ -1,7 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: will-t-harris/move-with-madeline
-  branch: develop
+  branch: master
 
 media_folder: static/img
 public_folder: /img
