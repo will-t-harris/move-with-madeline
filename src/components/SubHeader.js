@@ -42,7 +42,7 @@ const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
         className={`${sliderBodyClass} absolute left-0 top-0 min-h-screen w-full
          bg-gray-600 z-10 lg:hidden`}
       >
-        <ul className="flex flex-col content-center mt-20" onClick={closeMenu}>
+        <ul className="flex flex-col content-center mt-32" onClick={closeMenu}>
           <li className="mb-4 h-20 bg-gray-900 flex flex-row text-2xl text-white">
             <HomeIcon twClasses="self-center ml-8" />
             <Link className="font-subheader text-4xl leading-20 ml-24" to="/">
