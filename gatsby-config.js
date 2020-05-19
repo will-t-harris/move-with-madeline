@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-identity-widget`,
     {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
