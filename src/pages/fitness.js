@@ -29,8 +29,6 @@ const FitnessPage = () => {
           id
           childMarkdownRemark {
             frontmatter {
-              buttonText
-              cardText
               title
               topImage
               publishedDate

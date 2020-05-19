@@ -28,8 +28,6 @@ const TravelPage = () => {
           id
           childMarkdownRemark {
             frontmatter {
-              buttonText
-              cardText
               title
               topImage
               publishedDate

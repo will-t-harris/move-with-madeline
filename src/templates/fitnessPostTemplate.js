@@ -37,8 +37,6 @@ export const query = graphql`
           title
           publishedDate
           topImage
-          buttonText
-          cardText
         }
         html
       }
