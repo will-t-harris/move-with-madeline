@@ -12,7 +12,9 @@ import LifestyleIcon from "./icons/LifestyleIcon"
 const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
   let sliderBodyClass = classnames({
     hidden: !isMobileMenuOpen,
+    offScreen: !isMobileMenuOpen,
     block: isMobileMenuOpen,
+    onScreen: isMobileMenuOpen,
   })
 
   const closeMenu = () => {
@@ -40,7 +42,7 @@ const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
       <div
         className={`${sliderBodyClass} absolute left-0 top-0 min-h-screen w-full
-         bg-gray-600 z-10 lg:hidden`}
+         bg-gray-600 z-10 transition-all lg:hidden`}
       >
         <ul className="flex flex-col content-center mt-32" onClick={closeMenu}>
           <li className="mb-4 h-20 bg-gray-900 flex flex-row text-2xl text-white">
