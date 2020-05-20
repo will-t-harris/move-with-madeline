@@ -21,7 +21,7 @@ const BlogPostCard = ({ data, source }) => {
       <div>
         <img
           src={data.frontmatter.topImage}
-          className="rounded-lg h-56 w-full object-cover"
+          className="rounded-t-lg h-56 w-full object-cover"
         />
       </div>
       <div className="flex flex-col px-6 py-4 bg-gray-200 rounded-b-lg">
