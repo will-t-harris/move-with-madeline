@@ -42,5 +42,10 @@
   }
 }
 
+/* Markdown Images */
+.markdown img {
+  @apply mx-auto;
+}
+
 /* purgecss end ignore */
 @tailwind utilities;
