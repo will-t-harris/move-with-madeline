@@ -1,5 +1,5 @@
 ---
-title: "Test Food Title #1"
+title: "Test Food Title #1 Edited"
 publishedDate: 2020-05-14T19:09:20.508Z
 topImage: /img/food-index.jpg
 buttonText: "Test Food Button Text #1"
