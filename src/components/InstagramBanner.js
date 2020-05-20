@@ -13,7 +13,7 @@ const InstagramBanner = () => {
           localFile {
             childImageSharp {
               fixed(width: 250, height: 250) {
-                ...GatsbyImageSharpFixed_withWebp
+                ...GatsbyImageSharpFixed
               }
             }
           }

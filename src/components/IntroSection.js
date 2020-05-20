@@ -13,9 +13,9 @@ const IntroSection = () => {
           }
         }
       }
-      imageSharp(fluid: { originalName: { eq: "madeline-01.jpg" } }) {
+      imageSharp(fluid: { originalName: { eq: "madeline-intro.jpg" } }) {
         fluid(quality: 100, maxWidth: 600) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
