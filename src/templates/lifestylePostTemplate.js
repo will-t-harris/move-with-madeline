@@ -10,7 +10,7 @@ const LifestylePostTemplate = ({ data }) => {
     <div>
       <img
         src={post.frontmatter.topImage}
-        className="w-full h-640 object-cover object-top"
+        className="w-full object-cover object-top"
       />
       <div className="markdown">
         <h1 className="text-center text-2xl font-content">
