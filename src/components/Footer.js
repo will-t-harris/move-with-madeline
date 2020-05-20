@@ -1,8 +1,6 @@
 import React from "react"
 
-import YoutubeIcon from "./icons/YoutubeIcon"
 import InstagramIcon from "./icons/InstagramIcon"
-import TwitterIcon from "./icons/TwitterIcon"
 import AmazonIcon from "./icons/AmazonIcon"
 
 const Footer = () => {
