@@ -1,4 +1,4 @@
 ---
-title: Test Food Title
-image: /img/food-index.jpg
+title: Some of my favorite recipes
+image: /img/food-index-photo.jpg
 ---
