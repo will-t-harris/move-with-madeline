@@ -17,7 +17,7 @@ const FoodPage = () => {
       ) {
         id
         fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
       foodPost: allFile(filter: { sourceInstanceName: { eq: "food-posts" } }) {

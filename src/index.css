@@ -685,6 +685,13 @@ video {
   }
 }
 
+/* Markdown Images */
+
+.markdown img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template) {

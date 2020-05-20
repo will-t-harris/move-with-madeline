@@ -19,7 +19,7 @@ const FitnessPage = () => {
       ) {
         id
         fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
       fitnessPost: allFile(
