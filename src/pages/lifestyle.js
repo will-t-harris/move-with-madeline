@@ -29,8 +29,6 @@ const LifestylePage = () => {
           id
           childMarkdownRemark {
             frontmatter {
-              buttonText
-              cardText
               title
               topImage
               publishedDate
