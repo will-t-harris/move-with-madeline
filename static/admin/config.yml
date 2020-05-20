@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: will-t-harris/move-with-madeline
-  branch: develop
+  branch: master
 
 media_folder: static/img
 public_folder: /img
@@ -78,21 +78,6 @@ collections:
               widget: image,
             }
 
-  - label: PCOS Index Page
-    name: pcos-index
-    files:
-      - label: PCOS Index Page
-        name: pcos
-        file: blog/index-pages/pcos.md
-        fields:
-          - { label: Title, name: title, widget: string }
-          - {
-              label: Image,
-              name: image,
-              hint: This image must be named 'pcos-index',
-              widget: image,
-            }
-
   - label: Fitness Posts
     label_singular: Fitness Post
     name: fitness-posts
@@ -102,8 +87,6 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Card Text, name: cardText, widget: string }
       - { label: Body, name: body, widget: markdown }
 
   - label: Travel Posts
@@ -115,8 +98,6 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Card Text, name: cardText, widget: string }
       - { label: Body, name: body, widget: markdown }
 
   - label: Food Posts
@@ -128,8 +109,6 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Card Text, name: cardText, widget: string }
       - { label: Body, name: body, widget: markdown }
 
   - label: Lifestyle Posts
@@ -141,19 +120,4 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Published Date, name: publishedDate, widget: datetime }
       - { label: Top Image, name: topImage, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Card Text, name: cardText, widget: string }
-      - { label: Body, name: body, widget: markdown }
-
-  - label: PCOS Posts
-    label_singular: PCOS Post
-    name: pcos-posts
-    folder: blog/pcos
-    create: true
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Published Date, name: publishedDate, widget: datetime }
-      - { label: Top Image, name: topImage, widget: image }
-      - { label: Button Text, name: buttonText, widget: string }
-      - { label: Card Text, name: cardText, widget: string }
       - { label: Body, name: body, widget: markdown }
