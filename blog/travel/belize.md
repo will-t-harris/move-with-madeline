@@ -1,6 +1,6 @@
 ---
 title: BELIZE
-publishedDate: 2020-05-14T17:35:33.158Z
+publishedDate: 2020-05-20T15:41:01.531Z
 topImage: /img/bze-3.jpg
 buttonText: "Test travel button text #1"
 cardText: "Test travel card text # 1 blah blah ..."
