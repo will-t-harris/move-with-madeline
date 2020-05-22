@@ -10,7 +10,7 @@ const FitnessPostTemplate = ({ data }) => {
     <div>
       <img
         src={post.frontmatter.topImage}
-        className="w-full object-cover object-top"
+        className="w-full h-1280 object-cover"
       />
       <div className="markdown">
         <h1 className="text-center">{post.frontmatter.title}</h1>
