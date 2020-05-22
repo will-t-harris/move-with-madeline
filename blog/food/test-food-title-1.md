@@ -1,16 +1,66 @@
 ---
-title: "Test Food Title #1 Edited"
+title: TOFU SCRAMBLE
 publishedDate: 2020-05-14T19:09:20.508Z
-topImage: /img/food-index.jpg
+topImage: /img/tofu-1-.jpeg
 buttonText: "Test Food Button Text #1"
 cardText: "Test Food Title #1"
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet malesuada tempus. Cras et volutpat sem. Phasellus vehicula lobortis nunc ac molestie. Vestibulum dictum nisi id mi vehicula pharetra sit amet a neque. Sed eu dui pulvinar, molestie est sit amet, tincidunt tellus. Etiam ac porta massa, in viverra lectus. Duis et maximus erat. Pellentesque ac turpis sed elit euismod pretium ac a quam. Integer non ornare ligula.
+This is my go to breakfast recipe when I’m at home. It’s packed with protein, full of veggies, and can be made completely vegan and/or pescatarian (my version includes salmon). We typically only shop at Trader Joe’s, so all of the ingredients are based off of their items.
 
-Ut orci nunc, dictum eget lorem nec, varius pretium nulla. Sed urna arcu, dignissim eget leo vel, tincidunt tempor urna. Vivamus sollicitudin hendrerit elit, sit amet congue turpis tincidunt non. Phasellus vitae nisi ligula. Donec auctor quis nibh euismod venenatis. In hac habitasse platea dictumst. Aenean a porta libero. Phasellus interdum justo in mollis lobortis. Aliquam nulla risus, ultricies nec euismod ut, tempor sed diam. Nunc mollis arcu tellus, a tempus urna aliquet ac. Vestibulum sed rutrum est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed suscipit lobortis nibh, vel pulvinar lacus sollicitudin non. Vestibulum sollicitudin turpis in risus scelerisque, at porta enim dignissim. Phasellus ac dolor et mi consectetur accumsan sit amet sed orci. Nullam sagittis, leo vitae accumsan vestibulum, justo mauris malesuada nibh, ut laoreet elit nibh vel arcu.
 
-![](/img/travel-index.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet malesuada tempus. Cras et volutpat sem. Phasellus vehicula lobortis nunc ac molestie. Vestibulum dictum nisi id mi vehicula pharetra sit amet a neque. Sed eu dui pulvinar, molestie est sit amet, tincidunt tellus. Etiam ac porta massa, in viverra lectus. Duis et maximus erat. Pellentesque ac turpis sed elit euismod pretium ac a quam. Integer non ornare ligula.
+**Ingredients:**
 
-Ut orci nunc, dictum eget lorem nec, varius pretium nulla. Sed urna arcu, dignissim eget leo vel, tincidunt tempor urna. Vivamus sollicitudin hendrerit elit, sit amet congue turpis tincidunt non. Phasellus vitae nisi ligula. Donec auctor quis nibh euismod venenatis. In hac habitasse platea dictumst. Aenean a porta libero. Phasellus interdum justo in mollis lobortis. Aliquam nulla risus, ultricies nec euismod ut, tempor sed diam. Nunc mollis arcu tellus, a tempus urna aliquet ac. Vestibulum sed rutrum est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed suscipit lobortis nibh, vel pulvinar lacus sollicitudin non. Vestibulum sollicitudin turpis in risus scelerisque, at porta enim dignissim. Phasellus ac dolor et mi consectetur accumsan sit amet sed orci. Nullam sagittis, leo vitae accumsan vestibulum, justo mauris malesuada nibh, ut laoreet elit nibh vel arcu.
+1. Organic sprouted tofu (make sure you choose the firmest type available)
+
+2. 5-6 carrots
+
+3. Bag of shaved brussels sprouts
+
+4. 1/4 diced white onion
+
+5. Handful of chopped kale
+
+6. Avocado oil (this is my favorite oil, but any type will do)
+
+7. Pastrami style smoked salmon (optional)
+
+8. Garlic powder (optional)
+
+9. Nutritional yeast (optional)
+
+10. Black pepper (optional)
+
+**Step 1**
+
+Heat medium sized skillet with 2-3 tbsp. avocado oil
+
+**Step 2**
+
+Dice onion, and chop carrots into small slivers. Add both to the skillet
+
+![tofu 2 ](/img/tofu-2-.jpeg "Recipes-tofu 2")
+
+**Step 3**
+
+Sauté the carrots and onion on medium heat until the onions become translucent. Then add the brussels sprouts, kale, and about 1/4 cup of water. Cover and let steam for 5-7 minutes
+
+![tofu 3](/img/tofu-3-.jpeg "recipes-tofu 3")
+
+**Step 4**
+
+Crumble both blocks of tofu into the pan. I find the best consistency is when I squeeze small portions by hand. You can chop the blocks if you want, I just prefer the texture of scrambled eggs
+
+![tofu 4](/img/tofu-4-.jpeg "recipes-tofu 4")
+
+**Step 5**
+
+**\*Skip if you want to keep this vegan\***
+
+Add the smoked salmon with the tofu, and continue cooking for 3-4 minutes
+
+![tofu 5](/img/tofu-5-.jpeg "recipes-tofu 5")
+
+**Step 6**
+
+Mix in whatever seasoning you want! I use garlic powder, nutritional yeast, and pepper. THAT’S IT! Feel free to customize the flavor as much as you want. I typically add some hot sauce on top, and start digging in!
