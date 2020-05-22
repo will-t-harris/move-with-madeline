@@ -677,12 +677,23 @@ video {
   line-height: 2;
 }
 
-@media (min-width: 1024px) {
-  .markdown p {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+/* Markdown Lists */
+
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  margin-bottom: 0;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  text-align: center;
 }
 
 /* Markdown Images */
@@ -690,6 +701,16 @@ video {
 .markdown img {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Markdown Breakpoint Styles */
+
+@media (min-width: 1024px) {
+  .markdown p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
 
 /* purgecss end ignore */
