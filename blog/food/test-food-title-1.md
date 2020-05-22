@@ -7,29 +7,18 @@ cardText: "Test Food Title #1"
 ---
 This is my go to breakfast recipe when I’m at home. It’s packed with protein, full of veggies, and can be made completely vegan and/or pescatarian (my version includes salmon). We typically only shop at Trader Joe’s, so all of the ingredients are based off of their items.
 
-
-
 **Ingredients:**
 
-1. Organic sprouted tofu (make sure you choose the firmest type available)
-
-2. 5-6 carrots
-
-3. Bag of shaved brussels sprouts
-
-4. 1/4 diced white onion
-
-5. Handful of chopped kale
-
-6. Avocado oil (this is my favorite oil, but any type will do)
-
-7. Pastrami style smoked salmon (optional)
-
-8. Garlic powder (optional)
-
-9. Nutritional yeast (optional)
-
-10. Black pepper (optional)
+* Organic sprouted tofu (make sure you choose the firmest type available)
+* 5-6 carrots
+* Bag of shaved brussels sprouts
+* 1/4 diced white onion
+* Handful of chopped kale
+* Avocado oil (this is my favorite oil, but any type will do)
+* Pastrami style smoked salmon (optional)
+* Garlic powder (optional)
+* Nutritional yeast (optional)
+* Black pepper (optional)
 
 **Step 1**
 
