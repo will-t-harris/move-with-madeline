@@ -1,4 +1,4 @@
 ---
 title: A glimpse into some of my FAVORITE trips
-image: /img/travel-index-main.jpg
+image: /img/travel.index.jpeg
 ---
