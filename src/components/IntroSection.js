@@ -13,7 +13,7 @@ const IntroSection = () => {
           }
         }
       }
-      imageSharp(fluid: { originalName: { eq: "madeline-intro.jpg" } }) {
+      imageSharp(fluid: { originalName: { regex: "/madeline-intro/" } }) {
         fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
