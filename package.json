@@ -18,7 +18,6 @@
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-sharp": "^2.6.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-instagram": "^0.7.0",
     "gatsby-transformer-remark": "^2.8.7",
@@ -28,7 +27,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "typeface-bubbler-one": "^0.0.71",
+    "typeface-varela": "^0.0.72"
   },
   "devDependencies": {
     "prettier": "2.0.5",

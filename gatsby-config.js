@@ -14,14 +14,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          families: ["Bubbler One", "Varela"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-background-image-es5`,
       options: {
         specialChars: "/:",
