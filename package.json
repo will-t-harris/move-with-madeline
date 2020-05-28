@@ -39,7 +39,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run tailwind:css && GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
+    "build": "npm run tailwind:css && gatsby build",
     "dev": "npm run tailwind:css && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
