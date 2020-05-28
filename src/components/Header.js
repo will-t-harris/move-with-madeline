@@ -67,6 +67,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  isOpen: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired,
+  isMobileMenuOpen: PropTypes.bool.isRequired,
+  setIsMobileMenuOpen: PropTypes.func.isRequired,
+  toggleMobileMenuOpen: PropTypes.func.isRequired,
 }

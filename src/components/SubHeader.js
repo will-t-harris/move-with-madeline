@@ -96,5 +96,6 @@ const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 export default SubHeader
 
 SubHeader.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
+  isMobileMenuOpen: PropTypes.bool.isRequired,
+  setIsMobileMenuOpen: PropTypes.func.isRequired,
 }
