@@ -3,7 +3,7 @@ module.exports = {
     title: `Move with Madeline`,
     description: `Fitness, wellness, and lifestyle blog for Madeline Walkdon`,
     author: `Will Harris`,
-    keywords: "fitness movement travel lifestyle food",
+    keywords: ["fitness", "movement", "travel", "lifestyle", "food"],
     siteUrl: "https://www.movewithmadeline.com",
   },
   plugins: [
