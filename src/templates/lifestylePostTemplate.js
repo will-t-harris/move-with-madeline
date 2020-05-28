@@ -1,13 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import startCase from "lodash/startCase"
+import toLower from "lodash/toLower"
+
+import SEO from "../components/SEO"
 
 const LifestylePostTemplate = ({ data }) => {
   const {
     postContent: { childMarkdownRemark: post },
   } = data
+  const pathname = data.sitePage.path
+  const startCaseTitle = startCase(toLower(post.frontmatter.title))
 
   return (
     <div>
+      <SEO title={startCaseTitle} pathname={pathname} />
       <img
         src={post.frontmatter.topImage}
         className="w-full h-760 object-cover"
@@ -29,6 +36,9 @@ export default LifestylePostTemplate
 
 export const query = graphql`
   query lifestylePostQuery($slug: String!) {
+    sitePage(path: { regex: $slug }) {
+      path
+    }
     postContent: file(
       sourceInstanceName: { eq: "lifestyle-posts" }
       childMarkdownRemark: { fields: { slug: { eq: $slug } } }
