@@ -31,6 +31,19 @@
   @apply text-4xl text-textDark my-12 font-bold font-content;
 }
 
+/* Markdown Links */
+.markdown a {
+  @apply text-blue-600;
+}
+
+.markdown a:hover {
+  @apply underline;
+}
+
+.markdown a:visited {
+  @apply text-purple-600;
+}
+
 /* Markdown Content */
 .markdown p {
   @apply mx-4 mb-8 text-xl font-content leading-loose;

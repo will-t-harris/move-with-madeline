@@ -666,6 +666,24 @@ video {
   font-family: Varela ;
 }
 
+/* Markdown Links */
+
+.markdown a {
+  --text-opacity: 1;
+  color: #3182ce;
+  color: rgba(49, 130, 206, var(--text-opacity));
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown a:visited {
+  --text-opacity: 1;
+  color: #805ad5;
+  color: rgba(128, 90, 213, var(--text-opacity));
+}
+
 /* Markdown Content */
 
 .markdown p {
