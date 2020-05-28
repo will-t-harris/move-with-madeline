@@ -1,10 +1,10 @@
-const path = require("path")
-
 module.exports = {
   siteMetadata: {
     title: `Move with Madeline`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Fitness, wellness, and lifestyle blog for Madeline Walkdon`,
+    author: `Will Harris`,
+    keywords: "fitness movement travel lifestyle food",
+    siteUrl: "https://www.movewithmadeline.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
