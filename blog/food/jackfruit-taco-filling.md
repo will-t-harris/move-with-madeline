@@ -42,6 +42,8 @@ Step 4
 
 After sautéing for a few minutes, add the taco seasoning, and if needed 1/4 cup water. You want the seasoning to be absorbed by the fruit, but not have too much liquid
 
+![jackfruit 3](/img/jf-4.jpg "food-jackfruit 3")
+
 Step 5
 
 Toss the filling into a tortilla, or on top of a salad, or just eat as is! I like to add hot sauce, tomatoes, and avocado. Feel free to customize as much as you’d like
