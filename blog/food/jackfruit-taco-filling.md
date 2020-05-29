@@ -1,5 +1,5 @@
 ---
-title: Jackfruit taco filling
+title: JACKFRUIT TACOS
 publishedDate: 2020-05-27T18:28:14.398Z
 topImage: /img/jf-1.jpg
 ---
