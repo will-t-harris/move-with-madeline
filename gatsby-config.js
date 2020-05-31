@@ -14,6 +14,12 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-LM46CDKF89",
+      },
+    },
+    {
       resolve: `gatsby-background-image-es5`,
       options: {
         specialChars: "/:",
