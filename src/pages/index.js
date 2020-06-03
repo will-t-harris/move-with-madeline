@@ -31,8 +31,7 @@ const IndexPage = () => {
       <div>
         <IntroSection />
       </div>
-
-      <InstagramBanner />
+      // <InstagramBanner />
     </>
   )
 }
