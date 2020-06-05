@@ -76,28 +76,5 @@
   }
 }
 
-/* Overwrite IG Package CSS */
-.ig-posts {
-  @apply p-0 !important;
-}
-
-.ig-posts a.wrapper {
-  @apply h-552 border-0 !important;
-}
-
-.ig-posts img {
-  @apply object-cover object-top !important;
-}
-
-@media (max-width: 768px) {
-  .ig-posts,
-  .ig-posts__grid {
-    @apply flex flex-col mx-4 !important;
-  }
-
-  .ig-posts a.wrapper {
-    @apply mb-4 !important;
-  }
-}
 /* purgecss end ignore */
 @tailwind utilities;
