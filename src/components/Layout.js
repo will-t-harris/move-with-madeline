@@ -6,8 +6,6 @@ import classnames from "classnames"
 import Header from "./Header"
 import Footer from "./Footer"
 
-import "../../src/index.css"
-
 const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 

@@ -2,11 +2,18 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import SEO from "../components/SEO"
 import BlogPostCard from "../components/BlogPostCard"
 
 const LifestylePage = () => {
   const data = useStaticQuery(graphql`
     query lifestylePageQuery {
+      sitePage(
+        component: { regex: "/lifestyle/" }
+        id: { eq: "SitePage /lifestyle/" }
+      ) {
+        path
+      }
       lifestyleIndexContent: markdownRemark(
         fields: { slug: { eq: "/lifestyle/" } }
       ) {
@@ -43,8 +50,11 @@ const LifestylePage = () => {
     }
   `)
 
+  const pathname = data.sitePage.path
+
   return (
     <>
+      <SEO title="Lifestyle" pathname={pathname} />
       <Img
         fluid={data.lifestyleIndexImage.fluid}
         className="index-image-clip-path h-552"
