@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import InstagramPosts from "@luchoster/react-ig"
 
 import SEO from "../components/SEO"
 import IntroSection from "../components/IntroSection"
@@ -27,7 +28,11 @@ const IndexPage = () => {
         <IntroSection />
       </div>
 
-      <InstagramBanner />
+      <InstagramPosts
+        username="move.with.madeline"
+        maxPosts="4"
+        className="h-20"
+      />
     </>
   )
 }
