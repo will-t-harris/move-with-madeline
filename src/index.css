@@ -713,6 +713,36 @@ video {
   }
 }
 
+.ig-posts {
+  padding: 0 !important;
+}
+
+.ig-posts a.wrapper {
+  height: 552px !important;
+  border-width: 0 !important;
+}
+
+.ig-posts img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: top !important;
+     object-position: top !important;
+}
+
+@media (max-width: 768px) {
+  .ig-posts,
+  .ig-posts__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .ig-posts a.wrapper {
+    margin-bottom: 1rem !important;
+  }
+}
+
 /* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template) {
