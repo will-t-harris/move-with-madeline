@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import SEO from "../components/SEO"
 import IntroSection from "../components/IntroSection"
-import InstagramGallery from "../components/InstagramGallery"
+import InstagramBanner from "../components/InstagramBanner"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,8 +31,7 @@ const IndexPage = () => {
       <div>
         <IntroSection />
       </div>
-
-      <InstagramGallery />
+      <InstagramBanner />
     </>
   )
 }
