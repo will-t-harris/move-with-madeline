@@ -1,6 +1,6 @@
 import React from "react"
 
-import { useInstagramFeed } from "../useInstagramFeed"
+import { useInstagramFeed } from "../hooks/useInstagramFeed"
 
 const InstagramGallery = () => {
   let photos = useInstagramFeed({
