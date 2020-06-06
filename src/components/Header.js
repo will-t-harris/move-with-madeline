@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import classnames from "classnames"
 
-import SubHeader from "./SubHeader"
+import { SubHeader } from "./"
 
 const Header = ({
   siteTitle,

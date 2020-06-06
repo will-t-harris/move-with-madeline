@@ -2,8 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import SEO from "../components/SEO"
-import BlogPostCard from "../components/BlogPostCard"
+import { SEO, BlogPostCard } from "../components"
 
 const TravelPage = () => {
   const data = useStaticQuery(graphql`

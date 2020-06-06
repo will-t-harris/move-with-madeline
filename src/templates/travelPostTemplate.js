@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import startCase from "lodash/startCase"
 import toLower from "lodash/toLower"
 
-import SEO from "../components/SEO"
+import { SEO } from "../components"
 
 const TravelPostTemplate = ({ data }) => {
   const {

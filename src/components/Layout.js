@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import classnames from "classnames"
 
-import Header from "./Header"
-import Footer from "./Footer"
+import { Header, Footer } from "./"
 
 const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
