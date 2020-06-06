@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import InstagramPostCard from "./InstagramPostCard"
+import { InstagramPostCard } from "./"
 
 const InstagramBanner = () => {
   const data = useStaticQuery(graphql`

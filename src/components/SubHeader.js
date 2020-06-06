@@ -3,11 +3,13 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import classnames from "classnames"
 
-import HomeIcon from "./icons/HomeIcon"
-import FitnessIcon from "./icons/FitnessIcon"
-import TravelIcon from "./icons/TravelIcon"
-import FoodIcon from "./icons/FoodIcon"
-import LifestyleIcon from "./icons/LifestyleIcon"
+import {
+  HomeIcon,
+  FitnessIcon,
+  TravelIcon,
+  FoodIcon,
+  LifestyleIcon,
+} from "./icons"
 
 const SubHeader = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
   let sliderBodyClass = classnames({

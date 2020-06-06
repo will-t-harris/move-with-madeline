@@ -1,7 +1,6 @@
 import React from "react"
 
-import InstagramIcon from "./icons/InstagramIcon"
-import AmazonIcon from "./icons/AmazonIcon"
+import { InstagramIcon, AmazonIcon } from "./icons"
 
 const Footer = () => {
   return (
