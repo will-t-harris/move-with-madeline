@@ -731,6 +731,8 @@ video {
   }
 }
 
+/* Overwrite IG Package CSS */
+
 .ig-posts {
   padding: 0 !important;
 }
