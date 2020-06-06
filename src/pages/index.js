@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import InstagramPosts from "@luchoster/react-ig"
 
 import SEO from "../components/SEO"
 import IntroSection from "../components/IntroSection"
+import InstagramGallery from "../components/InstagramGallery"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -32,11 +32,7 @@ const IndexPage = () => {
         <IntroSection />
       </div>
 
-      <InstagramPosts
-        username="move.with.madeline"
-        maxPosts="4"
-        className="h-20"
-      />
+      <InstagramGallery />
     </>
   )
 }
