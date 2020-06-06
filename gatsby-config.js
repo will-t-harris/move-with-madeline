@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `move.with.madeline`,
+        username: `22249284318`,
       },
     },
     {
