@@ -18,26 +18,21 @@ const BlogPostCard = ({ data, source }) => {
 
   return (
     <div className="mx-auto w-352 rounded-lg shadow-lg mb-12 ">
-      <div>
+      <Link
+        to={`/${basePath}/${data.fields.slug}`}
+        className="font-content text-center bg-textDark text-bgPrimary py-2 rounded-lg"
+      >
         <img
           src={data.frontmatter.topImage}
           className="rounded-t-lg h-56 w-full object-cover"
         />
-      </div>
-      <div className="flex flex-col px-6 py-4 bg-gray-200 rounded-b-lg">
-        <h2 className="mb-2 font-bold text-textDark text-xl text-center font-content">
-          {data.frontmatter.title}
-        </h2>
-        <p className="text-textDark text-base opacity-75 mb-4">
-          {data.frontmatter.cardText}
-        </p>
-        <Link
-          to={`/${basePath}/${data.fields.slug}`}
-          className="font-content text-center bg-textDark text-bgPrimary py-2 rounded-lg"
-        >
-          READ MORE
-        </Link>
-      </div>
+
+        <div className="flex flex-col px-6 bg-gray-200 rounded-b-lg">
+          <h2 className="my-4 font-bold text-textDark text-xl text-center font-content">
+            {data.frontmatter.title}
+          </h2>
+        </div>
+      </Link>
     </div>
   )
 }
