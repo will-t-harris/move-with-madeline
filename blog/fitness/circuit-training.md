@@ -7,15 +7,12 @@ MY FAVORITE TYPE OF TRAINING!
 
 If you’ve been frequenting the gym for a while, you’ve probably seen or heard of circuit training already. If you haven’t, then here’s some quick details:
 
-
-
 1. The basic idea is to perform several different exercises back to back, with minimal rest between each move
 2. Circuits can range in intensity from light to heavy
 3. There is typically some kind of time interval involved, either between movements or between rounds
 4. It is a VERY effective way to improve cardiovascular health, burn calories, and also keep yourself entertained in the gym
-5. **THE BEST PART**, most circuits can be completed with zero gym equipment. Think bodyweight movements such as burpees, pushups, crunches, lunges, etc.
 
-
+**THE BEST PART**, most circuits can be completed with zero gym equipment. Think bodyweight movements such as burpees, pushups, crunches, lunges, etc.
 
 ![circuit training 1](/img/circuit-training1.jpg "fitness-circuit training 1")
 
