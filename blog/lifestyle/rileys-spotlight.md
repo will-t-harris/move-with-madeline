@@ -1,5 +1,5 @@
 ---
-title: Riley's Spotlight
+title: RILEY'S SPOTLIGHT
 publishedDate: 2020-06-30T16:10:54.443Z
 topImage: /img/riley-main.jpg
 ---
