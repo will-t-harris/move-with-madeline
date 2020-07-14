@@ -1,4 +1,4 @@
 ---
-title: a few non-fitness related things
+title: LIFE OUTSIDE OF THE GYM
 image: /img/lifestyle-index.jpg
 ---
