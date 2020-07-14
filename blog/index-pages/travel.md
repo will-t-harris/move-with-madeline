@@ -1,4 +1,4 @@
 ---
-title: A glimpse into some of my adventures
+title: A glimpse into my adventures
 image: /img/travel-index.jpg
 ---
