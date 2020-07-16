@@ -1,5 +1,5 @@
 ---
-title: BUILDING A HOME GYM IN A BEDROOM
+title: "HOW TO: BUILD A HOME GYM IN A BEDROOM"
 publishedDate: 2020-05-26T16:40:10.089Z
 topImage: /img/gym-title-photo.jpg
 ---
